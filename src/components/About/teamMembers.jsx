@@ -26,7 +26,7 @@ const teamMembers = [
   },
   {
     name: "Ritesh Pandey",
-    role: "Senior Digital Marketer",
+    role: "Senior Digital Marketing Manager",
     image:
       "https://media.licdn.com/dms/image/v2/D5603AQE8XY3P20ijOg/profile-displayphoto-shrink_200_200/B56ZUhmdM4GUAY-/0/1740025486366?e=1759363200&v=beta&t=sR3J8v_EzzEYRr5xuVHlwnJYadJXKu7dKVhF2GZw8s8",
     linkedin: "https://www.linkedin.com/in/ritesh-pandey-15266a275/",

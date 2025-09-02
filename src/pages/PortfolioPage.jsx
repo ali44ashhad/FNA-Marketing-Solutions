@@ -2,11 +2,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Compass } from "phosphor-react";
 import Contact from "../components/Home/Contact";
-import fundzz from "../assets/fundzz.png";
-import wmv from "../assets/wmv.png";
-import qbs from "../assets/qbs.png";
-import aroma from "../assets/aroma.png";
-import glory from "../assets/glory.png";
+import fundzz from "../assets/fundzz.jpg";
+import wmv from "../assets/wmv.jpg";
+import qbs from "../assets/qbs.jpg";
+import aroma from "../assets/aroma.jpg";
+import glory from "../assets/glory.jpg";
 
 const portfolioItems = [
   {
