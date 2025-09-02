@@ -3,7 +3,8 @@ import { FiMenu, FiX } from "react-icons/fi";
 import { ArrowRight } from "phosphor-react";
 
 const Header = () => {
-  const [servicesOpen, setServicesOpen] = useState(false);
+  const [desktopServicesOpen, setDesktopServicesOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const services = [
@@ -40,7 +41,7 @@ const Header = () => {
   ];
 
   return (
-    <nav className="fixed w-full z-50 bg-gray-900/80 backdrop-blur-xl border-b border-gray-800 shadow-lg">
+    <nav className="sticky top-0 z-50 w-full shadow-md bg-gray-900">
       <div className="container mx-auto px-4 lg:px-6">
         <div className="flex items-center justify-between py-4 lg:py-6">
           {/* Logo */}
@@ -65,17 +66,19 @@ const Header = () => {
             {/* Services Dropdown */}
             <div className="relative">
               <button
-                onClick={() => setServicesOpen(!servicesOpen)}
+                onClick={() => setDesktopServicesOpen(!desktopServicesOpen)}
                 className="flex items-center text-gray-300 hover:text-white font-light transition-colors duration-300"
+                aria-expanded={desktopServicesOpen}
               >
                 Our Services
                 <svg
                   className={`w-4 h-4 ml-1 transition-transform duration-200 ${
-                    servicesOpen ? "rotate-180" : ""
+                    desktopServicesOpen ? "rotate-180" : ""
                   }`}
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
+                  aria-hidden="true"
                 >
                   <path
                     strokeLinecap="round"
@@ -86,8 +89,8 @@ const Header = () => {
                 </svg>
               </button>
 
-              {servicesOpen && (
-                <div className="absolute left-0 mt-3 w-96 bg-gray-800 rounded-2xl shadow-xl border border-gray-700 overflow-hidden animate-fadeIn">
+              {desktopServicesOpen && (
+                <div className="absolute left-0 mt-3 w-80 max-h-[500px] bg-gray-800 rounded-2xl shadow-xl border border-gray-700 overflow-y-auto transition-all duration-300">
                   <div className="p-5 bg-gradient-to-r from-purple-600/10 to-pink-600/10 rounded-t-2xl">
                     <h3 className="text-white font-medium text-lg mb-1">
                       Our Services
@@ -96,7 +99,7 @@ const Header = () => {
                       Innovative solutions for a digital-first world
                     </p>
                   </div>
-                  <div className="p-3 max-h-96 overflow-y-auto">
+                  <div className="p-3 space-y-2">
                     {services.map((service, idx) => (
                       <a
                         key={idx}
@@ -131,7 +134,6 @@ const Header = () => {
             >
               About
             </a>
-
             <a
               href="/contact"
               className="px-6 py-2 rounded-full bg-gradient-to-r from-purple-600 to-pink-500 text-white font-medium shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300"
@@ -140,13 +142,11 @@ const Header = () => {
             </a>
           </div>
 
-          {/* Mobile Button */}
+          {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
             className="lg:hidden text-white p-2"
-            aria-label={
-              mobileOpen ? "Close navigation menu" : "Open navigation menu"
-            }
+            aria-label={mobileOpen ? "Close menu" : "Open menu"}
           >
             {!mobileOpen ? (
               <FiMenu className="w-6 h-6" aria-hidden="true" />
@@ -158,7 +158,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {mobileOpen && (
-          <div className="lg:hidden bg-gray-900/95 backdrop-blur-xl rounded-b-xl py-4 mt-2 space-y-2 animate-fadeIn">
+          <div className="lg:hidden bg-gray-900/95 backdrop-blur-xl rounded-b-xl py-4 mt-2 space-y-2 transition-all duration-300">
             <a
               href="/"
               className="block px-4 py-2 text-gray-300 hover:text-white"
@@ -166,17 +166,19 @@ const Header = () => {
               Home
             </a>
             <button
-              onClick={() => setServicesOpen(!servicesOpen)}
+              onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
               className="w-full text-left px-4 py-2 text-gray-300 hover:text-white flex justify-between items-center"
+              aria-expanded={mobileServicesOpen}
             >
               Our Services
               <svg
                 className={`w-4 h-4 ml-1 transition-transform duration-200 ${
-                  servicesOpen ? "rotate-180" : ""
+                  mobileServicesOpen ? "rotate-180" : ""
                 }`}
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
+                aria-hidden="true"
               >
                 <path
                   strokeLinecap="round"
@@ -186,7 +188,7 @@ const Header = () => {
                 ></path>
               </svg>
             </button>
-            {servicesOpen && (
+            {mobileServicesOpen && (
               <div className="pl-6 space-y-2">
                 {services.map((service, idx) => (
                   <a
@@ -211,7 +213,6 @@ const Header = () => {
             >
               About
             </a>
-
             <a
               href="/contact"
               className="block px-4 py-2 text-white bg-gradient-to-r from-purple-600 to-pink-500 rounded-full text-center font-medium shadow-md hover:scale-105 transition-transform duration-300"

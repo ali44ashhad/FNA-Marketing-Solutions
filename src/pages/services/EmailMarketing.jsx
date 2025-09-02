@@ -231,7 +231,7 @@ const EmailMarketing = () => {
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/50"></div>
 
           {/* Content */}
-          <div className="relative z-10 container mx-auto px-6 text-center mt-24">
+          <div className="relative z-10 container mx-auto px-6 text-center ">
             <div className="max-w-6xl mx-auto">
               <div className="mb-8 relative inline-block">
                 <div className="inline-flex items-center justify-center w-32 h-32 rounded-full bg-gradient-to-br from-purple-500/20 to-blue-500/20 backdrop-blur-xl border border-purple-500/30 animate-pulse-slow">

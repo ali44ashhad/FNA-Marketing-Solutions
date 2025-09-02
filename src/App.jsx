@@ -13,6 +13,7 @@ import BackendDevelopment from "./pages/services/BackendDevelopment.jsx";
 import SEODigitalMarketing from "./pages/services/SEODigitalMarketing.jsx";
 import EmailMarketing from "./pages/services/EmailMarketing.jsx";
 import WebHosting from "./pages/services/WebHosting.jsx";
+import ServicesPage from "./pages/ServicesPage.jsx";
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
             <Route path="/contact" element={<ContactUs />} />
+            <Route path="/services" element={<ServicesPage />} />
             <Route
               path="/services/website-development"
               element={<WebsiteDevelopment />}
