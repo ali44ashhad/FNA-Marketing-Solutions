@@ -501,7 +501,10 @@ const AboutPage = () => {
         </section>
 
         {/* Our Team Section */}
-        <section className="py-32 relative bg-gray-900 overflow-hidden">
+        <section
+          className="py-32 relative bg-gray-900 overflow-hidden"
+          aria-labelledby="team-heading"
+        >
           {/* Background Gradient */}
           <div className="absolute inset-0 bg-gradient-to-b from-gray-900 via-black/50 to-gray-900"></div>
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(59,130,246,0.05),transparent_50%)]"></div>
@@ -520,7 +523,10 @@ const AboutPage = () => {
                   Our Experts
                 </span>
               </div>
-              <h2 className="text-5xl md:text-6xl lg:text-7xl font-extralight text-white mb-6 tracking-tight">
+              <h2
+                id="team-heading"
+                className="text-5xl md:text-6xl lg:text-7xl font-extralight text-white mb-6 tracking-tight"
+              >
                 Meet the{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500 font-light">
                   Team
@@ -569,21 +575,29 @@ const AboutPage = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.8, delay: idx * 0.2 }}
+                  role="region"
+                  aria-labelledby={`member-${idx}-name`}
+                  aria-describedby={`member-${idx}-role`}
                 >
                   {/* Avatar */}
                   <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-2 border-white/20 group-hover:border-blue-500 transition-all duration-500">
                     <img
                       src={member.image}
-                      alt={member.name}
+                      alt={`${member.name} - ${member.role}`}
                       className="w-full h-full object-cover"
                     />
                   </div>
 
                   {/* Name & Role */}
-                  <h3 className="text-xl font-semibold text-white mb-1">
+                  <h3
+                    id={`member-${idx}-name`}
+                    className="text-xl font-semibold text-white mb-1"
+                  >
                     {member.name}
                   </h3>
-                  <p className="text-gray-400 mb-4">{member.role}</p>
+                  <p id={`member-${idx}-role`} className="text-gray-400 mb-4">
+                    {member.role}
+                  </p>
 
                   {/* Social Icons */}
                   <div className="flex justify-center gap-4 text-gray-400 group-hover:text-blue-500 transition-colors duration-300">
@@ -591,6 +605,7 @@ const AboutPage = () => {
                       href={member.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label={`Visit ${member.name}'s LinkedIn profile`}
                     >
                       <FaLinkedin size={20} />
                     </a>
