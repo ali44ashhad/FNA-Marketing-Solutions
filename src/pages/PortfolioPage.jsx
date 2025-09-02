@@ -165,7 +165,7 @@ const PortfolioPage = () => {
               Start Your Journey <ArrowRight />
             </a>
             <a
-              href="/services"
+              href="/contact"
               className="px-6 py-3 bg-gray-800/50 rounded-full shadow-lg font-medium flex items-center gap-2 hover:bg-gray-800/70 transition-colors duration-300"
             >
               Explore Services <Compass />

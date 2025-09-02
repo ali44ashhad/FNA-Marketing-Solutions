@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import Contact from "../components/Home/Contact";
 import { motion } from "framer-motion";
@@ -217,7 +215,9 @@ const Home = () => {
                       href={service.link}
                       className="inline-flex items-center text-blue-500 font-medium hover:underline transition-all duration-300"
                     >
-                      <span className="mr-2">Learn More</span>
+                      <span className="mr-2">
+                        Learn More about {service.title}{" "}
+                      </span>
                       <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300" />
                     </a>
                   </div>
