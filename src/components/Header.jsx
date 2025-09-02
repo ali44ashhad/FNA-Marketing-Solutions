@@ -144,11 +144,14 @@ const Header = () => {
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
             className="lg:hidden text-white p-2"
+            aria-label={
+              mobileOpen ? "Close navigation menu" : "Open navigation menu"
+            }
           >
             {!mobileOpen ? (
-              <FiMenu className="w-6 h-6" />
+              <FiMenu className="w-6 h-6" aria-hidden="true" />
             ) : (
-              <FiX className="w-6 h-6" />
+              <FiX className="w-6 h-6" aria-hidden="true" />
             )}
           </button>
         </div>
