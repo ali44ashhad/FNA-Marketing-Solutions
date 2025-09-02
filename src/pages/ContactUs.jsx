@@ -33,6 +33,14 @@ const ContactUs = () => {
 
   return (
     <>
+      <head>
+        <title>Contact Us | FNA Marketing Solutions</title>
+        <meta
+          name="description"
+          content="Reach out to FNA Marketing Solutions for a consultation—let’s discuss how our digital marketing, branding, web development, and hosting services can grow your business."
+        />
+      </head>
+
       <section className="relative py-32 bg-gray-900 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-gray-900 via-black/50 to-gray-900"></div>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_70%,rgba(59,130,246,0.05),transparent_50%)]"></div>
