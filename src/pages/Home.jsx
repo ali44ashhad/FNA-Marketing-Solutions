@@ -184,10 +184,10 @@ const Home = () => {
         </section>
 
         {/* Services Section */}
-        <section className="py-16 md:py-24 bg-gray-900 relative overflow-hidden">
+        <section className=" bg-gray-900 relative overflow-hidden">
           <div className="container mx-auto px-6">
             {/* Section Header */}
-            <div className="text-center mb-12 md:mb-16">
+            <div className="text-center ">
               <span className="text-blue-500 text-sm font-light tracking-widest uppercase">
                 Our Services
               </span>
