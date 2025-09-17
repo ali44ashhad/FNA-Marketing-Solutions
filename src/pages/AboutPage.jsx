@@ -26,6 +26,9 @@
 // export default AboutPage;
 
 import React from "react";
+import kalpana from "../assets/kalpana.jpeg";
+import gurshan from "../assets/gurshan.jpeg";
+import shivang from "../assets/shivang.jpeg";
 import { motion } from "framer-motion";
 import {
   ArrowDown,
@@ -566,6 +569,26 @@ const AboutPage = () => {
                     "https://media.licdn.com/dms/image/v2/D5603AQE8XY3P20ijOg/profile-displayphoto-shrink_200_200/B56ZUhmdM4GUAY-/0/1740025486366?e=1759363200&v=beta&t=sR3J8v_EzzEYRr5xuVHlwnJYadJXKu7dKVhF2GZw8s8",
                   linkedin:
                     "https://www.linkedin.com/in/ritesh-pandey-15266a275/",
+                },
+                {
+                  name: "Kalpana Tariyal",
+                  role: "Senior Analyst",
+                  image: kalpana,
+                  linkedin:
+                    "https://www.linkedin.com/in/kalpana-tariyal-5b8996249",
+                },
+                {
+                  name: "Gurshan",
+                  role: "Junior Analyst",
+                  image: gurshan,
+                  linkedin: "#",
+                },
+                {
+                  name: "Shivang ",
+                  role: "Junior Analyst",
+                  image: shivang,
+                  linkedin:
+                    "https://www.linkedin.com/in/shivang-saini-782630230 ",
                 },
               ].map((member, idx) => (
                 <motion.div
