@@ -571,7 +571,7 @@ const AboutPage = () => {
                     "https://www.linkedin.com/in/ritesh-pandey-15266a275/",
                 },
                 {
-                  name: "Kalpana Tariyal",
+                  name: "Kalpana ",
                   role: "Senior Analyst",
                   image: kalpana,
                   linkedin:
