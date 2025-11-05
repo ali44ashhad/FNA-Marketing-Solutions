@@ -5,8 +5,15 @@ import Contact from "../components/Home/Contact";
 import fundzz from "../assets/fundzz.jpg";
 import wmv from "../assets/wmv.jpg";
 import qbs from "../assets/qbs.jpg";
-import aroma from "../assets/aroma.jpg";
-import glory from "../assets/glory.jpg";
+import KloudShark from '../assets/kloud-shark.PNG'
+import fundRaiser from '../assets/fund-raiser.PNG'
+import voraGlobal from '../assets/vora-global.PNG'
+import mrsAdvisory from '../assets/mrs-advisory.PNG'
+import eduberator from '../assets/eduberator.PNG'
+import travelTenSandy from '../assets/travel-ten-sandy.PNG'
+import trangaPods from '../assets/tranga-pods.PNG'
+
+
 
 const portfolioItems = [
   {
@@ -33,28 +40,65 @@ const portfolioItems = [
     description:
       "QBS Accounting is a cloud-based accounting software that simplifies bookkeeping, invoicing, and financial reporting for businesses.",
   },
-  {
-    name: "Goldaroma Rice",
-    url: "https://goldaromarice.com/",
-    image: aroma,
-    tags: ["E-commerce", "Food", "Retail"],
-    description:
-      "Goldaroma Rice is an e-commerce platform dedicated to premium rice products with an easy-to-navigate shopping experience.",
-  },
-  {
-    name: "Glory Printers",
-    url: "https://www.gloryprinters.com/",
-    image: glory, // keep your imported image variable
-    tags: [
-      "Printing Solutions",
-      "Custom Packaging",
-      "Label Printing",
-      "Commercial Printing",
-      "+3 More",
-    ],
-    description:
-      "Glory Printers delivers high-quality printing solutions, specializing in custom packaging, labels, and commercial printing services tailored for businesses of all sizes.",
-  },
+{
+  name: "Kloud Shark",
+  url: "https://www.kloudshark.com/",
+  image: KloudShark,
+  tags: ["Cloud Services", "IT Solutions", "Technology"],
+  description:
+    "Kloud Shark delivers smart cloud and IT solutions to help businesses scale securely and efficiently.",
+},
+{
+  name: "Fund Raiser",
+  url: "https://fund-raiser-jw2v.vercel.app/",
+  image: fundRaiser,
+  tags: ["Fundraising", "Charity", "Finance"],
+  description:
+    "Fund Raiser helps individuals and organizations create and manage impactful fundraising campaigns online.",
+},
+{
+  name: "Vora Global",
+  url: "https://www.voraglobal.ae/",
+  image: voraGlobal,
+  tags: ["Consulting", "Business Services", "Investment"],
+  description:
+    "Vora Global offers expert business consulting and investment solutions for international growth.",
+},
+{
+  name: "MRS Advisory",
+  url: "https://www.mrsadvisory.co/",
+  image: mrsAdvisory,
+  tags: ["Financial Advisory", "Tax Consulting", "Corporate Services"],
+  description:
+    "MRS Advisory provides professional financial, tax, and corporate consulting services for businesses.",
+},
+{
+  name: "German Consultancy",
+  url: "https://german-consultancy-demo.vercel.app/",
+  image: eduberator,
+  tags: ["Immigration", "Education", "Career Guidance"],
+  description:
+    "German Consultancy guides students and professionals to study, work, and settle in Germany successfully.",
+},
+{
+  name: "Travel Ten Sandy",
+  url: "https://travel-ten-sandy.vercel.app/",
+  image: travelTenSandy,
+  tags: ["Travel", "Tourism", "Hospitality"],
+  description:
+    "Travel Ten Sandy curates memorable travel experiences and personalized vacation packages worldwide.",
+},
+{
+  name: "Tranga Pods",
+  url: "https://www.trangapods.com/",
+  image: trangaPods,
+  tags: ["Consumer Electronics", "Audio", "E-commerce"],
+  description:
+    "Tranga Pods offers premium wireless earbuds designed for exceptional sound and comfort.",
+},
+
+
+  
 ];
 
 const fadeUp = {
