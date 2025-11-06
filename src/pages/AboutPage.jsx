@@ -29,6 +29,13 @@ import React from "react";
 import kalpana from "../assets/kalpana.jpeg";
 import gurshan from "../assets/gurshan.jpeg";
 import shivang from "../assets/shivang.jpeg";
+import ashhadAli from '../assets/ashhadali.PNG'
+import madhavBansal from '../assets/madhav-bansal.PNG'
+import ritesh from '../assets/ritesh.PNG'
+import keshav from '../assets/keshav.PNG'
+import vandna from '../assets/vandna.PNG'
+import dishant from '../assets/dishant.PNG'
+
 import { motion } from "framer-motion";
 import {
   ArrowDown,
@@ -551,7 +558,7 @@ const AboutPage = () => {
                   name: "Madhav Bansal",
                   role: "Chief Financial Officer",
                   image:
-                    "https://media.licdn.com/dms/image/v2/D4E03AQHY1lg7xw8Odg/profile-displayphoto-shrink_200_200/B4EZV0rFr8H0AY-/0/1741419208462?e=1759363200&v=beta&t=Rx_3MabucK87sqsKfxswzra8kIVUTPIHsVI1YCPZRLQ",
+                    madhavBansal,
                   linkedin:
                     "https://www.linkedin.com/in/madhav-bansal-4a9114241/",
                 },
@@ -559,14 +566,14 @@ const AboutPage = () => {
                   name: "Ashhad Ali",
                   role: "Senior Software Developer",
                   image:
-                    "https://media.licdn.com/dms/image/v2/D4D03AQFo-kQah0_xOQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1679675457132?e=1759363200&v=beta&t=d7IakgqOm8Fn35meGLI3HTbp3YOpYzRKQHJhCM9KgWw",
+                    ashhadAli,
                   linkedin: "https://www.linkedin.com/in/ashhad-ali-b37914234/",
                 },
                 {
                   name: "Ritesh Pandey",
                   role: "Senior Digital Marketing Manager",
                   image:
-                    "https://media.licdn.com/dms/image/v2/D5603AQE8XY3P20ijOg/profile-displayphoto-shrink_200_200/B56ZUhmdM4GUAY-/0/1740025486366?e=1759363200&v=beta&t=sR3J8v_EzzEYRr5xuVHlwnJYadJXKu7dKVhF2GZw8s8",
+                    ritesh,
                   linkedin:
                     "https://www.linkedin.com/in/ritesh-pandey-15266a275/",
                 },
@@ -589,6 +596,27 @@ const AboutPage = () => {
                   image: shivang,
                   linkedin:
                     "https://www.linkedin.com/in/shivang-saini-782630230 ",
+                },
+                {
+                  name: "Keshav Sharma",
+                  role: "MERN Stack Developer",
+                  image: keshav,
+                  linkedin:
+                    "https://www.linkedin.com/in/keshavsharma9472 ",
+                },
+                {
+                  name: "Dishant Sharma ",
+                  role: "MERN Stack Developer",
+                  image: dishant,
+                  linkedin:
+                    "https://www.linkedin.com/in/dishantsharma7 ",
+                },
+                {
+                  name: "Vandana Shakya ",
+                  role: "Frontend Developer",
+                  image: vandna,
+                  linkedin:
+                    "https://www.linkedin.com/in/vandna-shakya-358187312",
                 },
               ].map((member, idx) => (
                 <motion.div

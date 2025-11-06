@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import Contact from "../components/Home/Contact";
 import { motion } from "framer-motion";
 import {
@@ -13,14 +14,14 @@ import {
   Cloud,
 } from "phosphor-react";
 
-import fundzz from "../assets/fundzz.jpg";
-import qbs from "../assets/qbs.jpg";
-import wmv from "../assets/wmv.jpg";
+import fundzz from "../assets/portfolios/fundzz.png";
+import voraGlobal from "../assets/portfolios/voraglobal.png";
+import wmv from "../assets/portfolios/worldMarketView.png";
 const Home = () => {
   return (
     <>
       <head></head>
-      <head>
+      <Helmet>
         <title>
           FNA Marketing Solutions – Innovative Digital Marketing & Branding
         </title>
@@ -28,7 +29,7 @@ const Home = () => {
           name="description"
           content="FNA Marketing Solutions delivers innovative digital marketing, branding, and advertising services to drive business growth and elevate your brand."
         />
-      </head>
+      </Helmet>
 
       <div className="bg-gray-950">
         {/* Hero Section */}
@@ -376,7 +377,7 @@ const Home = () => {
                   href={item.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group block relative rounded-2xl overflow-hidden bg-zinc-900/60 backdrop-blur-md border border-gray-700 hover:border-blue-500/50 shadow-lg hover:shadow-blue-500/20 transition-all duration-500"
+                  className="w-auto h-auto group block relative rounded-2xl overflow-hidden bg-zinc-900/60 backdrop-blur-md border border-gray-700 hover:border-blue-500/50 shadow-lg hover:shadow-blue-500/20 transition-all duration-500"
                   variants={{
                     hidden: { opacity: 0, y: 40 },
                     visible: { opacity: 1, y: 0 },
@@ -384,11 +385,11 @@ const Home = () => {
                   whileHover={{ scale: 1.03 }}
                 >
                   {/* Image */}
-                  <div className="h-64 relative overflow-hidden">
+                  <div className="h-auto relative overflow-hidden">
                     <img
                       src={item.image}
                       alt={item.title}
-                      className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700"
+                      className="w-auto h-auto object-contain opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
                   </div>
@@ -593,24 +594,21 @@ Secure, fast, and scalable hosting with regular backups.`,
 const portfolioItems = [
   {
     title: "Fundzz",
-    description:
-      "Simplifying Mutual Funds and Personal Finance for Smarter Investments",
+   
     image: fundzz,
     link: "https://fundzz.com/",
   },
   {
     title: "World Market View",
-    description:
-      "Delivering Trusted News, Market Insights, and Global Financial Updates",
+  
     image: wmv,
     link: "https://worldmarketview.in/",
   },
   {
-    title: "QBS-Accounting",
-    description:
-      "Providing Reliable Accounting, Tax, and Bookkeeping Solutions for Businesses",
-    image: qbs,
-    link: "https://qbsaccounting.us/",
+    title: "VoraGlobal",
+   
+    image: voraGlobal,
+    link: "https://www.voraglobal.ae/",
   },
 ];
 

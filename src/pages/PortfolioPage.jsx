@@ -1,105 +1,75 @@
+
+import { Helmet } from "react-helmet-async";
 import React from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Compass } from "phosphor-react";
 import Contact from "../components/Home/Contact";
-import fundzz from "../assets/fundzz.jpg";
-import wmv from "../assets/wmv.jpg";
-import qbs from "../assets/qbs.jpg";
-import KloudShark from '../assets/kloud-shark.PNG'
-import fundRaiser from '../assets/fund-raiser.PNG'
-import voraGlobal from '../assets/vora-global.PNG'
-import mrsAdvisory from '../assets/mrs-advisory.PNG'
-import eduberator from '../assets/eduberator.PNG'
-import travelTenSandy from '../assets/travel-ten-sandy.PNG'
-import trangaPods from '../assets/tranga-pods.PNG'
+import fundzz from '../assets/portfolios/fundzz.png'
+import wmv from "../assets/portfolios/worldMarketView.png";
+import qbs from "../assets/portfolios/qbsacounting.png";
+import KloudShark from '../assets/portfolios/kloudshark.png'
+import fundRaiser from '../assets/portfolios/fundraiser.png'
+import voraGlobal from '../assets/portfolios/voraglobal.png'
+import mrsAdvisory from '../assets/portfolios/mrsadvisory.png'
+import eduberator from '../assets/portfolios/eduberator.png'
+import travelTenSandy from '../assets/portfolios/travel-to-asia.png'
+import trangaPods from '../assets/portfolios/trangapods.png'
 
 
 
-const portfolioItems = [
+export const portfolioItems = [
   {
     name: "Fundzz",
     url: "https://fundzz.com/",
     image: fundzz,
-    tags: ["Finance", "Mutual Funds", "Investment"],
-    description:
-      "Fundzz is a comprehensive mutual fund platform offering insights, charts, and investment tracking tools for retail investors.",
   },
   {
     name: "World Market View",
     url: "https://worldmarketview.in/",
     image: wmv,
-    tags: ["Market Analysis", "Stocks", "Finance"],
-    description:
-      "World Market View provides real-time market analysis, stock trends, and global financial insights for professional traders.",
   },
   {
     name: "QBS Accounting",
     url: "https://qbsaccounting.us/",
     image: qbs,
-    tags: ["Accounting", "SaaS", "Finance"],
-    description:
-      "QBS Accounting is a cloud-based accounting software that simplifies bookkeeping, invoicing, and financial reporting for businesses.",
   },
-{
-  name: "Kloud Shark",
-  url: "https://www.kloudshark.com/",
-  image: KloudShark,
-  tags: ["Cloud Services", "IT Solutions", "Technology"],
-  description:
-    "Kloud Shark delivers smart cloud and IT solutions to help businesses scale securely and efficiently.",
-},
-{
-  name: "Fund Raiser",
-  url: "https://fund-raiser-jw2v.vercel.app/",
-  image: fundRaiser,
-  tags: ["Fundraising", "Charity", "Finance"],
-  description:
-    "Fund Raiser helps individuals and organizations create and manage impactful fundraising campaigns online.",
-},
-{
-  name: "Vora Global",
-  url: "https://www.voraglobal.ae/",
-  image: voraGlobal,
-  tags: ["Consulting", "Business Services", "Investment"],
-  description:
-    "Vora Global offers expert business consulting and investment solutions for international growth.",
-},
-{
-  name: "MRS Advisory",
-  url: "https://www.mrsadvisory.co/",
-  image: mrsAdvisory,
-  tags: ["Financial Advisory", "Tax Consulting", "Corporate Services"],
-  description:
-    "MRS Advisory provides professional financial, tax, and corporate consulting services for businesses.",
-},
-{
-  name: "German Consultancy",
-  url: "https://german-consultancy-demo.vercel.app/",
-  image: eduberator,
-  tags: ["Immigration", "Education", "Career Guidance"],
-  description:
-    "German Consultancy guides students and professionals to study, work, and settle in Germany successfully.",
-},
-{
-  name: "Travel Ten Sandy",
-  url: "https://travel-ten-sandy.vercel.app/",
-  image: travelTenSandy,
-  tags: ["Travel", "Tourism", "Hospitality"],
-  description:
-    "Travel Ten Sandy curates memorable travel experiences and personalized vacation packages worldwide.",
-},
-{
-  name: "Tranga Pods",
-  url: "https://www.trangapods.com/",
-  image: trangaPods,
-  tags: ["Consumer Electronics", "Audio", "E-commerce"],
-  description:
-    "Tranga Pods offers premium wireless earbuds designed for exceptional sound and comfort.",
-},
-
-
-  
+  {
+    name: "Kloud Shark",
+    url: "https://www.kloudshark.com/",
+    image: KloudShark,
+  },
+  {
+    name: "Fund Raiser",
+    url: "https://fund-raiser-jw2v.vercel.app/",
+    image: fundRaiser,
+  },
+  {
+    name: "Vora Global",
+    url: "https://www.voraglobal.ae/",
+    image: voraGlobal,
+  },
+  {
+    name: "MRS Advisory",
+    url: "https://www.mrsadvisory.co/",
+    image: mrsAdvisory,
+  },
+  {
+    name: "German Consultancy",
+    url: "https://german-consultancy-demo.vercel.app/",
+    image: eduberator,
+  },
+  {
+    name: "Travel Ten Sandy",
+    url: "https://travel-ten-sandy.vercel.app/",
+    image: travelTenSandy,
+  },
+  {
+    name: "Tranga Pods",
+    url: "https://www.trangapods.com/",
+    image: trangaPods,
+  },
 ];
+
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -143,7 +113,7 @@ const PortfolioPage = () => {
 
   return (
     <>
-      <head>
+      <Helmet>
         <title>
           FNA Marketing Solutions – Portfolio of Our Digital Marketing Success
         </title>
@@ -151,8 +121,7 @@ const PortfolioPage = () => {
           name="description"
           content="Explore FNA Marketing Solutions’ portfolio showcasing impactful digital marketing, branding, and web development projects that drive growth and elevate brands."
         />
-      </head>
-
+      </Helmet>
       <div className="bg-gray-900 text-white overflow-hidden relative">
         {/* Stars in All Success Stories section */}
         {stars.map((star, idx) => (
@@ -224,7 +193,7 @@ const PortfolioPage = () => {
                 className="px-6 py-3 bg-gray-800/50 rounded-full shadow-lg font-medium flex items-center gap-2 hover:bg-gray-800/70 transition-colors duration-300"
               >
                 Explore Services <Compass />
-              </a>
+              </a>          
             </motion.div>
           </div>
         </motion.section>
@@ -256,70 +225,37 @@ const PortfolioPage = () => {
             </div>
 
             {/* Portfolio Grid */}
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {portfolioItems.map((item, idx) => (
-                <motion.a
-                  key={idx}
-                  href={item.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group relative animate-fade-in-up rounded-3xl overflow-hidden border border-white/10"
-                  initial={{ opacity: 0, y: 40 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: idx * 0.1, duration: 0.6 }}
-                >
-                  <div className="relative overflow-hidden rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 hover:border-white/20 transition-all duration-500 h-full">
-                    {/* Animated Border Gradient */}
-                    <div
-                      className="absolute inset-0 rounded-3xl bg-gradient-to-r from-purple-500 via-blue-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                      style={{ padding: "1px" }}
-                    >
-                      <div className="absolute inset-[1px] bg-gray-900 rounded-3xl"></div>
-                    </div>
+         <div className="grid  grid-cols-[repeat(auto-fit,minmax(0px,1fr)) w-auto h-auto sm:grid-cols-2 lg:grid-cols-3 gap-6">
+  {portfolioItems.map((item, idx) => (
+    <motion.a
+      key={idx}
+      href={item.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group relative rounded-xl overflow-hidden"
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ delay: idx * 0.08, duration: 0.5 }}
+    >
+      {/* === Card Wrapper (equal fixed ratio) === */}
+      <div className="relative w-auto h-auto rounded-xl overflow-hidden bg-gray-900 border border-white/10 hover:border-white/20 transition-all duration-500 flex items-center justify-center">
+        
+        {/* === Image fills evenly === */}
+        <img
+          src={item.image}
+          alt={item.name}
+          className="w-auto h-auto object-contain transition-transform duration-700 group-hover:scale-105"
+          loading="lazy"
+        />
 
-                    <div className="relative">
-                      <div className="aspect-video overflow-hidden">
-                        <img
-                          src={item.image}
-                          alt={item.name}
-                          className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700"
-                          loading="lazy"
-                        />
-                      </div>
+        {/* === Glow on hover === */}
+        <div className="absolute inset-0 pointer-events-none bg-gradient-to-r from-purple-500/0 via-blue-500/0 to-pink-500/0 group-hover:from-purple-500/10 group-hover:via-blue-500/8 group-hover:to-pink-500/10 transition-colors duration-500" />
+      </div>
+    </motion.a>
+  ))}
+</div>
 
-                      <div className="p-6">
-                        <h3 className="text-xl font-light text-white mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-blue-400 transition-all duration-300">
-                          {item.name}
-                        </h3>
-                        <p className="text-white/60 font-light text-sm mb-4 line-clamp-2">
-                          {item.description}
-                        </p>
-                        <div className="flex flex-wrap gap-1 mb-4">
-                          {item.tags.map((tag, i) => (
-                            <span
-                              key={i}
-                              className="text-xs px-2 py-1 rounded bg-white/5 text-white/60"
-                            >
-                              {tag}
-                            </span>
-                          ))}
-                        </div>
-                        <div className="flex items-center justify-between">
-                          <span className="text-xs text-white/40">
-                            {item.tags[0]}
-                          </span>
-                          <ArrowRight
-                            className="text-white/40 group-hover:text-purple-400 transition-colors duration-300"
-                            size={16}
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </motion.a>
-              ))}
-            </div>
           </div>
         </section>
 
