@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "@dr.pogodin/react-helmet";
 import Contact from "../components/Home/Contact";
 import { motion } from "framer-motion";
 import {
@@ -20,7 +20,6 @@ import wmv from "../assets/portfolios/worldMarketView.png";
 const Home = () => {
   return (
     <>
-      <head></head>
       <Helmet>
         <title>
           FNA Marketing Solutions – Innovative Digital Marketing & Branding

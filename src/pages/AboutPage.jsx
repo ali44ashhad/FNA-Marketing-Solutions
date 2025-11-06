@@ -59,11 +59,12 @@ import {
   Scales,
 } from "phosphor-react";
 import { FaLinkedin } from "react-icons/fa";
+import { Helmet } from "@dr.pogodin/react-helmet";
 
 const AboutPage = () => {
   return (
     <>
-      <head>
+      <Helmet>
         <title>
           About Us – FNA Marketing Solutions | Innovating Digital Excellence
         </title>
@@ -71,7 +72,7 @@ const AboutPage = () => {
           name="description"
           content="Meet the creative minds behind FNA Marketing Solutions—our mission: crafting innovative digital marketing, branding, and web development strategies to elevate brands and drive growth."
         />
-      </head>
+      </Helmet>
 
       <div className="bg-black">
         {/* About Hero Section */}

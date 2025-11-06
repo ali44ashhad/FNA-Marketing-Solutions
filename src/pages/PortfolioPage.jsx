@@ -1,5 +1,5 @@
 
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "@dr.pogodin/react-helmet";
 import React from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Compass } from "phosphor-react";

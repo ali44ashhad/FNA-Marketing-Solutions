@@ -1,4 +1,4 @@
-import { HelmetProvider } from "react-helmet-async";
+import { HelmetProvider } from "@dr.pogodin/react-helmet";
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
