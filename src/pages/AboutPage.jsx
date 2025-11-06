@@ -551,8 +551,7 @@ const AboutPage = () => {
                 {
                   name: "Jatin Jain",
                   role: "Founder & CEO",
-                  image:
-                    jatinJain,
+                  image: jatinJain,
                   linkedin: "https://www.linkedin.com/in/jatin-jain-62853b213/",
                 },
                 {
