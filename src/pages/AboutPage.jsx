@@ -35,6 +35,7 @@ import ritesh from '../assets/ritesh.PNG'
 import keshav from '../assets/keshav.PNG'
 import vandna from '../assets/vandna.PNG'
 import dishant from '../assets/dishant.PNG'
+import jatinJain from '../assets/jatinjain.PNG'
 
 import { motion } from "framer-motion";
 import {
@@ -551,7 +552,7 @@ const AboutPage = () => {
                   name: "Jatin Jain",
                   role: "Founder & CEO",
                   image:
-                    "https://media.licdn.com/dms/image/v2/D5603AQF_b4WibeB9ug/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1732191220350?e=2147483647&v=beta&t=3WSPFEWJwpX_CFvnTt5npbbM0tRfHmA5dE88mClPhV4",
+                    jatinJain,
                   linkedin: "https://www.linkedin.com/in/jatin-jain-62853b213/",
                 },
                 {
