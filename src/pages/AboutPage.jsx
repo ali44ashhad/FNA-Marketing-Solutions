@@ -36,6 +36,9 @@ import keshav from '../assets/keshav.PNG'
 import vandna from '../assets/vandna.PNG'
 import dishant from '../assets/dishant.PNG'
 import jatinJain from '../assets/jatinjain.PNG'
+import linkedIn from '../assets/linkedin.png'
+import portfolio from '../assets/portfolio.png'
+
 
 import { motion } from "framer-motion";
 import {
@@ -58,7 +61,6 @@ import {
   GraduationCap,
   Scales,
 } from "phosphor-react";
-import { FaLinkedin } from "react-icons/fa";
 import { Helmet } from "@dr.pogodin/react-helmet";
 
 const AboutPage = () => {
@@ -553,7 +555,9 @@ const AboutPage = () => {
                   name: "Jatin Jain",
                   role: "Founder & CEO",
                   image: jatinJain,
+                  portfolio: "https://jatin-portfolio-plum.vercel.app/",
                   linkedin: "https://www.linkedin.com/in/jatin-jain-62853b213/",
+                 
                 },
                 {
                   name: "Madhav Bansal",
@@ -568,6 +572,7 @@ const AboutPage = () => {
                   role: "Senior Software Developer",
                   image:
                     ashhadAli,
+                    portfolio: "https://ashhad.pages.dev",
                   linkedin: "https://www.linkedin.com/in/ashhad-ali-b37914234/",
                 },
                 {
@@ -653,13 +658,25 @@ const AboutPage = () => {
 
                   {/* Social Icons */}
                   <div className="flex justify-center gap-4 text-gray-400 group-hover:text-blue-500 transition-colors duration-300">
+                     {member.portfolio && (
+      <a 
+        href={member.portfolio}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex gap-5 cursor-pointer"
+        title="Portfolio"
+      >
+        <img src={portfolio} alt="Portfolio" className="h-6 w-6" />
+      </a>
+    )}
                     <a
                       href={member.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={`Visit ${member.name}'s LinkedIn profile`}
                     >
-                      <FaLinkedin size={20} />
+                      <img src={linkedIn} className="h-5 w-5" />
+                      
                     </a>
                   </div>
                 </motion.div>
