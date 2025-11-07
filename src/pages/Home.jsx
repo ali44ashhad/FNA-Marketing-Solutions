@@ -361,7 +361,7 @@ const Home = () => {
 
             {/* Portfolio Grid */}
             <motion.div
-              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto"
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl h-auto mx-auto"
               initial="hidden"
               whileInView="visible"
               variants={{
@@ -384,11 +384,11 @@ const Home = () => {
                   whileHover={{ scale: 1.03 }}
                 >
                   {/* Image */}
-                  <div className="h-auto relative overflow-hidden">
+                  <div className="h-[100%] relative overflow-hidden">
                     <img
                       src={item.image}
                       alt={item.title}
-                      className="w-auto h-auto object-contain opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700"
+                      className="w-auto h-[100%] object-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
                   </div>

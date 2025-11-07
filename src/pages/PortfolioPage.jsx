@@ -14,6 +14,7 @@ import mrsAdvisory from '../assets/portfolios/mrsadvisory.png'
 import eduberator from '../assets/portfolios/eduberator.png'
 import travelTenSandy from '../assets/portfolios/travel-to-asia.png'
 import trangaPods from '../assets/portfolios/trangapods.png'
+import handyMan from '../assets/portfolios/handyman.png'
 
 
 
@@ -95,6 +96,14 @@ const portfolioItems = [
     url: "https://www.trangapods.com/",
     image: trangaPods,
     tags: ["Consumer Electronics", "Audio", "E-commerce"],
+    description:
+      "Tranga Pods provides smart perfume spray machines for continuous freshness and elegant scent experiences.",
+  },
+   {
+    name: "Handyman",
+    url: "https://handyman-one-rho.vercel.app/",
+    image: handyMan,
+    tags: ["Home Improvement", "Maintenance", "Handyman Services"],
     description:
       "Tranga Pods provides smart perfume spray machines for continuous freshness and elegant scent experiences.",
   },
