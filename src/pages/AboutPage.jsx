@@ -603,13 +603,7 @@ const AboutPage = () => {
                   linkedin:
                     "https://www.linkedin.com/in/shivang-saini-782630230 ",
                 },
-                {
-                  name: "Keshav Sharma",
-                  role: "MERN Stack Developer",
-                  image: keshav,
-                  linkedin:
-                    "https://www.linkedin.com/in/keshavsharma9472 ",
-                },
+
                 {
                   name: "Dishant Sharma ",
                   role: "MERN Stack Developer",
@@ -663,7 +657,7 @@ const AboutPage = () => {
         href={member.portfolio}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex gap-5 cursor-pointer"
+        className="flex gap-5 cursor-pointer transition-transform duration-300 hover:scale-150"
         title="Portfolio"
       >
         <img src={portfolio} alt="Portfolio" className="h-6 w-6" />
@@ -674,6 +668,7 @@ const AboutPage = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={`Visit ${member.name}'s LinkedIn profile`}
+                      className="cursor-pointer transition-transform duration-300 hover:scale-150"
                     >
                       <img src={linkedIn} className="h-5 w-5" />
                       
