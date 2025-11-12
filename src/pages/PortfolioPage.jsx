@@ -14,7 +14,7 @@ import mrsAdvisory from '../assets/portfolios/mrsadvisory.png'
 import eduberator from '../assets/portfolios/eduberator.png'
 import travelTenSandy from '../assets/portfolios/travel-to-asia.png'
 import trangaPods from '../assets/portfolios/trangapods.png'
-import handyMan from '../assets/portfolios/handyman.png'
+import handyMan from '../assets/portfolios/handyman.jpeg'
 
 
 

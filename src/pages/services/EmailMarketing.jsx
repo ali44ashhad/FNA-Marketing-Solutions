@@ -16,7 +16,7 @@ import {
   MdAutorenew,
   MdDesignServices,
   MdTrendingUp,
-} from "react-icons/md";
+} from "react-icons/md"; 
 
 const EmailMarketing = () => {
   const [activeTab, setActiveTab] = useState(0);
