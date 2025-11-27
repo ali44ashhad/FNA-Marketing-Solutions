@@ -15,6 +15,7 @@ import eduberator from '../assets/portfolios/eduberator.png'
 import travelTenSandy from '../assets/portfolios/travel-to-asia.png'
 import trangaPods from '../assets/portfolios/trangapods.png'
 import handyMan from '../assets/portfolios/handyman.jpeg'
+import pharmaProspective from '../assets/portfolios/pharma-prospective.png'
 
 
 
@@ -101,12 +102,21 @@ const portfolioItems = [
   },
    {
     name: "Handyman",
-    url: "https://handyman-one-rho.vercel.app/",
+    url: "https://handyman-one-rho.vercel.app",
     image: handyMan,
     tags: ["Home Improvement", "Maintenance", "Handyman Services"],
     description:
       "Tranga Pods provides smart perfume spray machines for continuous freshness and elegant scent experiences.",
   },
+ {
+  name: "Pharma Prospective",
+  url: "https://pharma-prospective-website.vercel.app",
+  image: pharmaProspective,
+  tags: ["Pharmaceuticals", "Healthcare", "Research"],
+  description:
+    "Pharma Prospective focuses on innovative healthcare solutions, advancing pharmaceutical research and improving patient outcomes.",
+}
+
 ];
 
 
