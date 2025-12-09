@@ -16,7 +16,9 @@ import travelTenSandy from '../assets/portfolios/travel-to-asia.png'
 import trangaPods from '../assets/portfolios/trangapods.png'
 import handyMan from '../assets/portfolios/handyman.jpeg'
 import pharmaProspective from '../assets/portfolios/pharma-prospective.png'
-
+import lms from '../assets/portfolios/lms.png'
+import docDent from '../assets/portfolios/doc-dent.png'
+import commun from '../assets/portfolios/commun.png'
 
 
 const portfolioItems = [
@@ -115,7 +117,33 @@ const portfolioItems = [
   tags: ["Pharmaceuticals", "Healthcare", "Research"],
   description:
     "Pharma Prospective focuses on innovative healthcare solutions, advancing pharmaceutical research and improving patient outcomes.",
+},
+{
+  name: "CommuN",
+  url: "https://worker-community.vercel.app",
+  image: commun,
+  tags: ["Community Platform", "Local Services", "Networking"],
+  description:
+    "A community-driven platform connecting users with trusted local service providers and skill-based opportunities.",
+},
+
+{
+  name: "Doc-Dent",
+  url: "https://doc-dent.vercel.app",
+  image: docDent,
+  tags: ["Healthcare", "Dental Care", "Medical Services"],
+  description:
+    "A modern healthcare portal offering dental consultations, treatment guidance, and seamless patient-doctor interaction.",
+},
+{
+  name: "LMS",
+  url: "https://lms-trvj.vercel.app",
+  image: lms,
+  tags: ["Gaming", "Interactive Learning", "Gamified Experience"],
+  description:
+    "A gamified learning platform offering interactive challenges, rewards, and immersive educational gameplay.",
 }
+
 
 ];
 
