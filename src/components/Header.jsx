@@ -62,7 +62,12 @@ const Header = () => {
             >
               Home
             </a>
-
+<a
+              href="/about-us"
+              className="text-gray-300 hover:text-white font-light transition-colors duration-300"
+            >
+              About
+            </a>
             {/* Services Dropdown */}
             <div className="relative">
               <button
@@ -129,11 +134,12 @@ const Header = () => {
               Portfolio
             </a>
             <a
-              href="/about-us"
+              href="/pricing"
               className="text-gray-300 hover:text-white font-light transition-colors duration-300"
             >
-              About
+              Pricing
             </a>
+            
             <a
               href="/contact"
               className="px-6 py-2 rounded-full bg-gradient-to-r from-purple-600 to-pink-500 text-white font-medium shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300"

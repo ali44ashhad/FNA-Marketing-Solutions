@@ -14,6 +14,7 @@ import SEODigitalMarketing from "./pages/services/SEODigitalMarketing.jsx";
 import EmailMarketing from "./pages/services/EmailMarketing.jsx";
 import WebHosting from "./pages/services/WebHosting.jsx";
 import ServicesPage from "./pages/ServicesPage.jsx";
+import Pricing from "./pages/Pricing.jsx";
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
             <Route path="/contact" element={<ContactUs />} />
+            <Route path="/pricing" element={<Pricing />} />
             <Route path="/services" element={<ServicesPage />} />
             <Route
               path="/services/website-development"
