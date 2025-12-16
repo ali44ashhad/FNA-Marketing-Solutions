@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useRef} from "react";
 import { motion } from "framer-motion";
 import pricingBack from '../assets/pricingback.png'
 import { Check } from "lucide-react";
@@ -9,7 +9,8 @@ import serve4 from '../assets/pricing/serve4.png'
 import serve5 from '../assets/pricing/serve5.png'
 import serve6 from '../assets/pricing/serve6.webp'
 import serve7 from '../assets/pricing/serve7.png'
-
+ import emailjs from "@emailjs/browser";
+ 
 
 
 
@@ -86,6 +87,35 @@ const industries = [
 ];
 
 const Pricing = () => {
+
+
+    const form = useRef();
+      const [status, setStatus] = useState(""); // sending, success, error
+    
+      const sendEmail = (e) => {
+        e.preventDefault();
+        setStatus("sending");
+    
+        emailjs
+          .sendForm(
+            "service_s1zneya", // Your Gmail Service ID
+            "template_zjr9xc5", // Your Template ID
+            form.current,
+            "CSgQWNECMUMG1ylRv" // Your Public Key
+          )
+          .then(
+            () => {
+              setStatus("success");
+              e.target.reset();
+            },
+            (error) => {
+              setStatus("error");
+              console.error("EmailJS Error:", error.text);
+            }
+          );
+      };
+
+    
   return (
     <>
      <section className="relative w-full h-[80vh] flex items-center overflow-hidden bg-[#430969]">
@@ -344,152 +374,114 @@ const Pricing = () => {
 
 
     {/* form */}
-   <section className="bg-[#170E2D] py-12 px-4 ">
-      <div className="max-w-7xl mx-auto rounded-3xl overflow-hidden shadow-2xl ">
-        <div className="grid grid-cols-1 lg:grid-cols-2">
+  <section className="bg-[#170E2D] py-12">
+  <div className="w-[95%] sm:w-[70%] mx-auto rounded-3xl overflow-hidden shadow-2xl">
 
-          {/* LEFT FORM */}
-          <div className="bg-[#151924] p-6 sm:p-10 lg:p-14 border border-purple-400 tl-rounded-3xl">
-            
-            {/* Small heading */}
-            <div className="flex items-center gap-3 mb-6">
-              <span className="text-[#EB37A6] text-xl">✴</span>
-              <p className="uppercase text-sm font-semibold tracking-wider text-gray-300">
-                Let’s Connect
-              </p>
-            </div>
+    {/* SINGLE GRID – NO GAP */}
+    <div className="grid grid-cols-1 lg:grid-cols-2">
 
-            {/* Main heading */}
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white leading-snug mb-10">
-              Ready to Discuss Your <br /> Project With Us?
-            </h2>
+      {/* LEFT FORM */}
+      <div className="flex items-center justify-center bg-[#170E2D]">
+       <motion.div
+  initial={{ opacity: 0, x: -20 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.8 }}
+  className="w-full h-full bg-white/5 backdrop-blur-xl 
+             rounded-none lg:rounded-l-3xl
+             p-4 sm:p-6 md:p-12"
+>
+  <form ref={form} onSubmit={sendEmail} className="space-y-6 w-full">
+    <input type="hidden" name="title" value="Website Contact Form" />
 
-            {/* FORM */}
-            <form className="space-y-6">
+    {/* Name */}
+    <div>
+      <label className="block text-gray-300 mb-2">Name</label>
+      <input
+        type="text"
+        name="name"
+        required
+        className="w-full p-4 rounded-2xl bg-gray-800 border border-gray-700 text-white"
+      />
+    </div>
 
-              {/* Name & Email */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-sm mb-2 text-gray-300">
-                    Your Name
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="Enter your name"
-                    className="w-full rounded-lg bg-[#1E2939] border border-gray-600 
-                    text-white px-4 py-3 placeholder-gray-400
-                    focus:outline-none focus:ring-2 focus:ring-[#9D1BF5]"
-                  />
-                </div>
+    {/* Email */}
+    <div>
+      <label className="block text-gray-300 mb-2">Email</label>
+      <input
+        type="email"
+        name="email"
+        required
+        className="w-full p-4 rounded-2xl bg-gray-800 border border-gray-700 text-white"
+      />
+    </div>
 
-                <div>
-                  <label className="block text-sm mb-2 text-gray-300">
-                    Your Email
-                  </label>
-                  <input
-                    type="email"
-                    placeholder="Enter your email"
-                    className="w-full rounded-lg bg-[#1E2939] border border-gray-600 
-                    text-white px-4 py-3 placeholder-gray-400
-                    focus:outline-none focus:ring-2 focus:ring-[#9D1BF5]"
-                  />
-                </div>
-              </div>
+    {/* Phone */}
+    <div>
+      <label className="block text-gray-300 mb-2">Phone</label>
+      <input
+        type="tel"
+        name="phone"
+        required
+        className="w-full p-4 rounded-2xl bg-gray-800 border border-gray-700 text-white"
+      />
+    </div>
 
-              {/* Phone & Service */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-sm mb-2 text-gray-300">
-                    Your Phone
-                  </label>
-                  <div className="flex items-center gap-2 bg-[#1E2939] border border-gray-600 rounded-lg px-3 py-3">
-                    <span className="text-sm text-gray-300">🇮🇳 +91</span>
-                    <input
-                      type="tel"
-                      placeholder="9876543210"
-                      className="w-full bg-transparent text-white outline-none placeholder-gray-400"
-                    />
-                  </div>
-                </div>
+    {/* Message */}
+    <div>
+      <label className="block text-gray-300 mb-2">Message</label>
+      <textarea
+        name="message"
+        rows={5}
+        required
+        className="w-full p-4 rounded-2xl bg-gray-800 border border-gray-700 text-white"
+      />
+    </div>
 
-                <div>
-                  <label className="block text-sm mb-2 text-gray-300">
-                    Services You Are Looking For
-                  </label>
-                  <select
-                    className="w-full rounded-lg bg-[#1E2939] border border-gray-600 
-                    text-white px-4 py-3
-                    focus:outline-none focus:ring-2 focus:ring-[#9D1BF5]"
-                  >
-                    <option className="bg-[#151924]">Please choose an option</option>
-                    <option className="bg-[#151924]">Web Development</option>
-                    <option className="bg-[#151924]">Mobile App Development</option>
-                    <option className="bg-[#151924]">UI / UX Design</option>
-                    <option className="bg-[#151924]">Digital Marketing</option>
-                  </select>
-                </div>
-              </div>
+    {/* Submit */}
+    <button
+      type="submit"
+      disabled={status === "sending"}
+      className="inline-flex items-center px-8 py-4 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-medium hover:scale-105 transition-transform duration-300 disabled:opacity-50"
+    >
+      {status === "sending" ? "Sending..." : "Send Message"}
+    </button>
 
-              {/* Requirement */}
-              <div>
-                <label className="block text-sm mb-2 text-gray-300">
-                  Your Requirement (optional)
-                </label>
-                <textarea
-                  rows="4"
-                  placeholder="Tell us about your project..."
-                  className="w-full rounded-lg bg-[#1E2939] border border-gray-600 
-                  text-white px-4 py-3 placeholder-gray-400
-                  focus:outline-none focus:ring-2 focus:ring-[#9D1BF5]"
-                />
-              </div>
+    {/* Status Messages */}
+    {status === "success" && (
+      <p className="text-green-400 mt-2">Message sent successfully!</p>
+    )}
+    {status === "error" && (
+      <p className="text-red-400 mt-2">
+        Error sending message. Please check your Gmail service connection.
+      </p>
+    )}
+  </form>
+</motion.div>
 
-              {/* Fake Recaptcha */}
-              <div className="border border-gray-600 rounded-lg p-4 flex items-center gap-3 w-fit text-gray-300">
-                <input type="checkbox" className="accent-[#9D1BF5]" />
-                <span className="text-sm">I'm not a robot</span>
-              </div>
+      </div>
 
-              {/* Submit */}
-              <button
-                type="submit"
-                className="mt-4 inline-flex items-center justify-center
-                bg-gradient-to-r from-[#9D1BF5] to-[#EB37A6]
-                text-white font-semibold px-10 py-3 rounded-full
-                hover:scale-105 transition-transform"
-              >
-                Submit
-              </button>
-
-            </form>
-          </div>
-
-          {/* RIGHT IMAGE SECTION */}
-          <div className="relative min-h-[300px] lg:min-h-full">
-            
-            {/* Image */}
-            <img
-              src={serve1}
-              alt="Contact"
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-
-            {/* Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-b from-[#170E2D]/40 to-[#170E2D]/80" />
-
-            {/* Text */}
-            <div className="absolute bottom-6 left-6 right-6 text-white">
-              <p className="text-base sm:text-lg leading-relaxed">
-                Reach out to us today and discover how we can help your business
-                thrive, grow, and succeed with ease.
-              </p>
-            </div>
-
-          </div>
-
+      {/* RIGHT IMAGE */}
+      <div className="relative w-full min-h-[300px] lg:min-h-full">
+        <img
+          src={serve1}
+          alt="Contact"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#170E2D]/40 to-[#170E2D]/80" />
+        <div className="absolute bottom-6 left-6 right-6 text-white">
+          <p className="text-base sm:text-lg">
+            Reach out to us today and discover how we can help your business grow.
+          </p>
         </div>
       </div>
-    </section>
+
+    </div>
+  </div>
+</section>
+
+
+
     </>
   );
 };
