@@ -212,10 +212,9 @@ const Pricing = () => {
             }}
           >
             <p className="leading-relaxed">
-              Unlock custom strategies that boost your brand visibility, increase
-              user engagement, and deliver real online results. Unlock custom
-              strategies that boost your brand visibility, increase user
-              engagement, and deliver real online results.
+             Leverage innovative IT solutions that enhance your digital presence, optimize user experiences, and drive measurable 
+             business growth. Harness cutting-edge technology strategies that strengthen your brand, streamline operations, 
+             and deliver tangible results online.
             </p>
           </motion.div>
 
