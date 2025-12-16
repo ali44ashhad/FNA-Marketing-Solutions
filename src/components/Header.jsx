@@ -171,6 +171,12 @@ const Header = () => {
             >
               Home
             </a>
+                <a
+              href="/about-us"
+              className="block px-4 py-2 text-gray-300 hover:text-white"
+            >
+              About
+            </a>
             <button
               onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
               className="w-full text-left px-4 py-2 text-gray-300 hover:text-white flex justify-between items-center"
@@ -213,12 +219,13 @@ const Header = () => {
             >
               Portfolio
             </a>
-            <a
-              href="/about-us"
+                <a
+              href="/pricing"
               className="block px-4 py-2 text-gray-300 hover:text-white"
             >
-              About
+              Pricing
             </a>
+        
             <a
               href="/contact"
               className="block px-4 py-2 text-white bg-gradient-to-r from-purple-600 to-pink-500 rounded-full text-center font-medium shadow-md hover:scale-105 transition-transform duration-300"
