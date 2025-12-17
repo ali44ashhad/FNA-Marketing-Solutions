@@ -606,7 +606,7 @@ const AboutPage = () => {
 
                 {
                   name: "Dishant Sharma ",
-                  role: "MERN Stack Developer",
+                  role: "Software Engineer",
                   image: dishant,
                   linkedin:
                     "https://www.linkedin.com/in/dishantsharma7 ",
