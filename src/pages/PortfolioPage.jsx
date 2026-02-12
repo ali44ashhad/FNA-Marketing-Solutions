@@ -19,6 +19,12 @@ import pharmaProspective from '../assets/portfolios/pharma-prospective.png'
 import lms from '../assets/portfolios/lms.png'
 import docDent from '../assets/portfolios/doc-dent.png'
 import commun from '../assets/portfolios/commun.png'
+import lawFirm from '../assets/portfolios/law-firm.png'
+import theBigBusinessCo from '../assets/portfolios/big-business.jpg'
+import fanForge from '../assets/portfolios/fan-forge.png'
+import stunn from '../assets/portfolios/stunn.png'
+import lawyerRiskometer from '../assets/portfolios/lawyer-riskometer.png'
+import fnaEstate from '../assets/portfolios/fna-estate.png'
 
 
 const portfolioItems = [
@@ -142,7 +148,57 @@ const portfolioItems = [
   tags: ["Gaming", "Interactive Learning", "Gamified Experience"],
   description:
     "A gamified learning platform offering interactive challenges, rewards, and immersive educational gameplay.",
-}
+},
+    // data
+    {
+      name: "Law Firm",
+      url: "https://lawfirm-sand-six.vercel.app",
+      image: lawFirm,
+      tags: ["Corporate Law", "DPDP Compliance", "Tech Litigation"],
+      description:
+        "India’s premier tech law firm specializing in DPDP Act 2023 compliance, data protection strategy, and high-stakes technology litigation for startups to enterprises.",
+    },
+    {
+      name: "The Big Business Co",
+      url: "https://www.thebigbusinessco.com.au",
+      image: theBigBusinessCo,
+      tags: ["Business Operations", "Process Systems", "Operational Consulting"],
+      description:
+        "Designing and installing structured operating systems that bring control, safety, and clarity to trades, warehouses, and operational businesses.",
+    },
+    {
+      name: "Fan Forge",
+      url: "https://fanforge-frontend.vercel.app",
+      image: fanForge,
+      tags: ["Merch Marketplace", "Creator Economy", "Fan Community"],
+      description:
+        "A curated marketplace for official and fan-made merchandise, empowering independent creators while giving fans one place to discover and shop.",
+    },
+    {
+      name: "Stunn",
+      url: "https://www.stunn.club/",
+      image: stunn,
+      tags: ["Home Services", "On-Demand Booking", "Local Professionals"],
+      description:
+        "A trusted home services platform offering verified professionals for repairs, maintenance, and lifestyle services with speed and reliability.",
+    },
+    {
+      name: "Lawyer Riskometer",
+      url: "https://lawyer-riskometer.vercel.app",
+      image: lawyerRiskometer,
+      tags: ["Legal Risk Assessment", "Compliance Tools", "Data Protection"],
+      description:
+        "An intelligent legal risk assessment tool helping businesses evaluate compliance exposure and reduce regulatory penalties effectively.",
+    },
+    {
+      name: "FNA Estate",
+      url: "https://fna-estate.vercel.app",
+      image: fnaEstate,
+      tags: ["Real Estate", "Luxury Properties", "Smart Living"],
+      description:
+        "A premium real estate platform showcasing exclusive properties, market insights, and modern intelligent living experiences.",
+    }
+    
 
 
 ];
