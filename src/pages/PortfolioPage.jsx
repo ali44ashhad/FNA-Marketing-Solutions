@@ -25,6 +25,7 @@ import fanForge from '../assets/portfolios/fan-forge.png'
 import stunn from '../assets/portfolios/stunn.png'
 import lawyerRiskometer from '../assets/portfolios/lawyer-riskometer.png'
 import fnaEstate from '../assets/portfolios/fna-estate.png'
+import kidsSchool from '../assets/portfolios/kids-school.png'
 
 
 const portfolioItems = [
@@ -197,7 +198,15 @@ const portfolioItems = [
       tags: ["Real Estate", "Luxury Properties", "Smart Living"],
       description:
         "A premium real estate platform showcasing exclusive properties, market insights, and modern intelligent living experiences.",
-    }
+    },
+    {
+      name: "Kids School",
+      url: "https://school-website-two-psi.vercel.app",
+      image: kidsSchool,
+      tags: ["Creative Excellence", "Holistic Education", "Student Development"],
+      description:
+        "A dynamic educational platform focused on creative excellence and academic rigor, empowering students to unleash their full potential and grow into confident, well-rounded learners.",
+    }      
     
 
 
