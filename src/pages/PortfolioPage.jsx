@@ -208,7 +208,7 @@ const portfolioItems = [
         "A dynamic educational platform focused on creative excellence and academic rigor, empowering students to unleash their full potential and grow into confident, well-rounded learners.",
     } ,
     {
-      name: "Ral Estate",
+      name: "Real Estate",
       url: "https://real-estate-neon-alpha.vercel.app",
       image: realEstate,
       tags: ["Premium Properties", "Modern Living", "Investment Value"],
