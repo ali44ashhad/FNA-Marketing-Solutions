@@ -26,7 +26,7 @@ import stunn from '../assets/portfolios/stunn.png'
 import lawyerRiskometer from '../assets/portfolios/lawyer-riskometer.png'
 import fnaEstate from '../assets/portfolios/fna-estate.png'
 import kidsSchool from '../assets/portfolios/kids-school.png'
-
+import realEstate from '../assets/portfolios/real-estate.png'
 
 const portfolioItems = [
   {
@@ -206,9 +206,15 @@ const portfolioItems = [
       tags: ["Creative Excellence", "Holistic Education", "Student Development"],
       description:
         "A dynamic educational platform focused on creative excellence and academic rigor, empowering students to unleash their full potential and grow into confident, well-rounded learners.",
-    }      
-    
-
+    } ,
+    {
+      name: "Ral Estate",
+      url: "https://real-estate-neon-alpha.vercel.app",
+      image: realEstate,
+      tags: ["Premium Properties", "Modern Living", "Investment Value"],
+      description:
+        "A dynamic real estate platform focused on premium residential and commercial developments, combining modern design, superior construction quality, and long-term investment value to help clients find their ideal property with confidence.",    
+    }
 
 ];
 
