@@ -590,12 +590,12 @@ const AboutPage = () => {
                   linkedin:
                     "https://www.linkedin.com/in/kalpana-tariyal-5b8996249",
                 },
-                {
-                  name: "Gurshan",
-                  role: "Junior Analyst",
-                  image: gurshan,
-                  linkedin: "#",
-                },
+                // {
+                //   name: "Gurshan",
+                //   role: "Junior Analyst",
+                //   image: gurshan,
+                //   linkedin: "#",
+                // },
                 {
                   name: "Shivang ",
                   role: "Junior Analyst",
