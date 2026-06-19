@@ -18,6 +18,7 @@ import fundzz from "../assets/portfolios/fundzz.png";
 import voraGlobal from "../assets/portfolios/voraglobal.png";
 import wmv from "../assets/portfolios/worldMarketView.png";
 const Home = () => {
+  
   return (
     <>
       <Helmet>

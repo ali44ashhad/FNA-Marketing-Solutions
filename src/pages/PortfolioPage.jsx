@@ -27,6 +27,12 @@ import lawyerRiskometer from '../assets/portfolios/lawyer-riskometer.png'
 import fnaEstate from '../assets/portfolios/fna-estate.png'
 import kidsSchool from '../assets/portfolios/kids-school.png'
 import realEstate from '../assets/portfolios/real-estate.png'
+import naxusEds from '../assets/portfolios/naxus-eds.png'
+import peckhDecor from '../assets/portfolios/peckdecore.png'
+import caseMatters from '../assets/portfolios/case-matters.png'
+import idify from '../assets/portfolios/idify.png'
+import renowa from '../assets/portfolios/renowa.png'
+
 
 const portfolioItems = [
   {
@@ -38,20 +44,20 @@ const portfolioItems = [
       "Fundzz is a comprehensive mutual fund platform offering insights, charts, and investment tracking tools for retail investors.",
   },
   {
+    name: "CommuN",
+    url: "https://worker-community.vercel.app",
+    image: commun,
+    tags: ["Community Platform", "Local Services", "Networking"],
+    description:
+      "A community-driven platform connecting users with trusted local service providers and skill-based opportunities.",
+  },
+  {
     name: "World Market View",
     url: "https://worldmarketview.in/",
     image: wmv,
     tags: ["Market Analysis", "Stocks", "Finance"],
     description:
       "World Market View provides real-time market analysis, stock trends, and global financial insights for professional traders.",
-  },
-  {
-    name: "QBS Accounting",
-    url: "https://qbsaccounting.us/",
-    image: qbs,
-    tags: ["Accounting", "SaaS", "Finance"],
-    description:
-      "QBS Accounting is a cloud-based accounting software that simplifies bookkeeping, invoicing, and financial reporting for businesses.",
   },
   {
     name: "Kloud Shark",
@@ -62,6 +68,15 @@ const portfolioItems = [
       "Kloud Shark delivers smart cloud and IT solutions to help businesses scale securely and efficiently.",
   },
   {
+    name: "QBS Accounting",
+    url: "https://qbsaccounting.us/",
+    image: qbs,
+    tags: ["Accounting", "SaaS", "Finance"],
+    description:
+      "QBS Accounting is a cloud-based accounting software that simplifies bookkeeping, invoicing, and financial reporting for businesses.",
+  },
+
+  {
     name: "Fund Raiser",
     url: "https://fund-raiser-jw2v.vercel.app/",
     image: fundRaiser,
@@ -71,7 +86,7 @@ const portfolioItems = [
   },
   {
     name: "Vora Global",
-    url: "https://www.voraglobal.ae/",
+    url: "https://www.voraglobal.ae",
     image: voraGlobal,
     tags: ["Consulting", "Business Services", "Investment"],
     description:
@@ -124,14 +139,6 @@ const portfolioItems = [
   tags: ["Pharmaceuticals", "Healthcare", "Research"],
   description:
     "Pharma Prospective focuses on innovative healthcare solutions, advancing pharmaceutical research and improving patient outcomes.",
-},
-{
-  name: "CommuN",
-  url: "https://worker-community.vercel.app",
-  image: commun,
-  tags: ["Community Platform", "Local Services", "Networking"],
-  description:
-    "A community-driven platform connecting users with trusted local service providers and skill-based opportunities.",
 },
 
 {
@@ -214,8 +221,49 @@ const portfolioItems = [
       tags: ["Premium Properties", "Modern Living", "Investment Value"],
       description:
         "A dynamic real estate platform focused on premium residential and commercial developments, combining modern design, superior construction quality, and long-term investment value to help clients find their ideal property with confidence.",    
-    }
+    },
 
+    // change //
+    {
+      name: "NaxusEds",
+      url: "https://naxus-eds.vercel.app",
+      image: naxusEds,
+      tags: ["Architectural Design", "Modern Blueprints", "Urban Planning"],
+      description:
+        "A premium architecture and spatial design portfolio showcasing innovative structural blueprints, modern interior planning, and sustainable urban design solutions tailored for high-end residential and commercial projects.",
+    },
+    {
+      name: "PeckDecor",
+      url: "https://peckdecoker-kitchen.vercel.app",
+      image: peckhDecor,
+      tags: ["Interior Design", "Modular Kitchens", "Home Decor"],
+      description:
+        "A premium interior design showcase specializing in modern modular kitchens, elegant cabinetry, and contemporary home decor solutions tailored to elevate functional living spaces.",
+    },
+    {
+      name: "Case Matters",
+      url: "https://case-matter.vercel.app",
+      image: caseMatters,
+      tags: ["Legal Tech", "Case Management", "Law Firm"],
+      description:
+        "A professional digital platform for modern law firms, featuring integrated practice area grids, legal case monitoring, and comprehensive consultation workflows to handle critical legal details with precision.",
+    },
+    {
+      name: "IDify",
+      url: "https://i-dfy-x5bu.vercel.app",
+      image: idify,
+      tags: ["Digital Identity", "Smart Card UI", "Web Automation"],
+      description:
+        "A specialized identification and card generation web tool focused on instant digital profiling, sleek verification layouts, and streamlined utility management.",
+    },
+    {
+      name: "Renowa",
+      url: "https://renowa.vercel.app",
+      image: renowa,
+      tags: ["Home Renovation", "Property Flipping", "Modern Living"],
+      description:
+        "A premier home transformation and renovation platform matching beautiful interior design alternatives with structural upgrades, bringing specialized design frameworks and premium value together under one roof.",
+    }
 ];
 
 
