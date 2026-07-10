@@ -345,7 +345,7 @@ const portfolioItems = [
  
   {
     name: "Global Properties",
-    url: "https://globalproperties.com",
+    url: "https://globcalproperties.co.uk",
     image: globalProperties,
     tags: ["UK Real Estate", "Great Britain", "Property Deals"],
     description:
