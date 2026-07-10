@@ -33,6 +33,18 @@ import caseMatters from '../assets/portfolios/case-matters.png'
 import idify from '../assets/portfolios/idify.png'
 import renowa from '../assets/portfolios/renowa.png'
 
+import amritaCoaching from '../assets/portfolios/amrita-coaching.png'
+import CMA from '../assets/portfolios/cma.png'
+import athena from '../assets/portfolios/athena.png'
+import pharaovault from '../assets/portfolios/pharaovault.png'
+import gloryPrinters from '../assets/portfolios/glory-printers.png'
+import genzbroking from '../assets/portfolios/genz-broking.png'
+import clearedeals from '../assets/portfolios/clear-deals.png'
+import madhavGopal from '../assets/portfolios/madhav-gopal.png'
+import globalProperties from '../assets/portfolios/global-properties.png'
+
+
+
 
 const portfolioItems = [
   {
@@ -52,8 +64,16 @@ const portfolioItems = [
       "A community-driven platform connecting users with trusted local service providers and skill-based opportunities.",
   },
   {
+    name: "Madhav Gopal",
+    url: "https://www.fnadeals.com",
+    image: madhavGopal,
+    tags: ["Deity Apparels", "Idol Clothing", "Spiritual E-Comm"],
+    description:
+      "A specialized retail platform dedicated to showcasing and selling beautifully handcrafted deity idols, custom premium clothes, and spiritual decorative accessories.",
+  },
+  {
     name: "World Market View",
-    url: "https://worldmarketview.in/",
+    url: "https://worldmarketview.in", 
     image: wmv,
     tags: ["Market Analysis", "Stocks", "Finance"],
     description:
@@ -263,7 +283,75 @@ const portfolioItems = [
       tags: ["Home Renovation", "Property Flipping", "Modern Living"],
       description:
         "A premier home transformation and renovation platform matching beautiful interior design alternatives with structural upgrades, bringing specialized design frameworks and premium value together under one roof.",
-    }
+    },
+
+    // new added//
+   {
+    name: "Amrita Coaching",
+    url: "https://amritacoaching.ca",
+    image: amritaCoaching,
+    tags: ["Online Coaching", "Distance Learning", "Virtual Classes"],
+    description:
+      "A flexible online coaching platform designed to deliver premium, live interactive tutoring and comprehensive digital study materials directly to students across Canada, anytime and anywhere.",
+  },
+  {
+    name: "CMA",
+    url: "https://cma-frontend.vercel.app",
+    image: CMA,
+    tags: ["Exam Prep", "Mock Simulation", "Performance Analytics"],
+    description:
+      "An oriented preparation platform built to build real exam confidence through adaptive test simulations, detailed analytical breakdowns, and expert guidance before your actual results.",
+  },
+  {
+    name: "Athena",
+    url: "https://bar-exam-ec2.vercel.app",
+    image: athena,
+    tags: ["Adaptive Practice", "AI Tutoring", "Voice Mentor"],
+    description:
+      "A next-generation bar exam prep platform featuring adaptive multiple-choice practices, AI-powered conversational tutoring, voice mentorship, and precision progress tracking systems.",
+  },
+      {
+    name: "Pharaovault",
+    url: "https://pharaohvault-frontend.vercel.app",
+    image: pharaovault,
+    tags: ["Gold Trading", "Precious Metals", "Secure Marketplace"],
+    description:
+      "A secure and premium digital vault marketplace built for safely selling, buying, and trading authentic physical gold assets and precious commodities with absolute transparency.",
+  },
+  {
+    name: "Glory Printers",
+    url: "https://www.gloryprinters.com",
+    image: gloryPrinters,
+    tags: ["Poly Bags", "Zipper Bags", "Custom Packaging"],
+    description:
+      "A trusted manufacturing leader specializing in high-grade poly bags, durable zipper bags, and fully customized product packaging materials serving industries reliably since 2011.",
+  },
+  {
+    name: "GENZbroking",
+    url: "https://www.genzbroking.com",
+    image: genzbroking,
+    tags: ["Forex & Crypto", "Trading Tools", "Fast Execution"],
+    description:
+      "A powerful financial ecosystem unlocking institutional-grade trading tools, ultra-fast order execution, and crystal-clear pricing structures across forex, indices, commodities, and crypto.",
+  },
+  {
+    name: "Cleardeals",
+    url: "https://cleardeals-blue.vercel.app",
+    image: clearedeals,
+    tags: ["Tricity Real Estate", "Data-Driven Property", "Local Expertise"],
+    description:
+      "Setting a high standard of unwavering integrity in Chandigarh's real estate market, combining data-driven precision with deep local expertise across the Tricity area.",
+  },
+ 
+  {
+    name: "Global Properties",
+    url: "https://globalproperties.com",
+    image: globalProperties,
+    tags: ["UK Real Estate", "Great Britain", "Property Deals"],
+    description:
+      "Your strategic international gateway to exploring, analyzing, and purchasing prime residential and commercial real estate properties across the United Kingdom and Great Britain.",
+  }
+
 ];
 
 
