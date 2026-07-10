@@ -41,7 +41,7 @@ import gloryPrinters from '../assets/portfolios/glory-printers.png'
 import genzbroking from '../assets/portfolios/genz-broking.png'
 import clearedeals from '../assets/portfolios/clear-deals.png'
 import madhavGopal from '../assets/portfolios/madhav-gopal.png'
-import globalProperties from '../assets/portfolios/global-properties.png'
+import globcalProperties from '../assets/portfolios/globcal-properties.png'
 
 
 
@@ -346,7 +346,7 @@ const portfolioItems = [
   {
     name: "Global Properties",
     url: "https://globcalproperties.co.uk",
-    image: globalProperties,
+    image: globcalProperties,
     tags: ["UK Real Estate", "Great Britain", "Property Deals"],
     description:
       "Your strategic international gateway to exploring, analyzing, and purchasing prime residential and commercial real estate properties across the United Kingdom and Great Britain.",
