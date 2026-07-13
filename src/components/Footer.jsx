@@ -110,7 +110,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://www.linkedin.com/company/FNAMarketingSolutions/"
+                href="https://www.linkedin.com/company/fna-marketing-solutions/posts/?feedView=all"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-gray-800/50 border border-gray-700 flex items-center justify-center hover:border-purple-400 hover:bg-purple-600/20 transition-all duration-300"
@@ -124,7 +124,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="https://www.instagram.com/FNAMarketingSolutions/"
+                href="https://www.instagram.com/fna.marketing.solutions?igsh=MTdsdDkydnEwc3l0ag=="
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-gray-800/50 border border-gray-700 flex items-center justify-center hover:border-pink-400 hover:bg-pink-600/20 transition-all duration-300"
