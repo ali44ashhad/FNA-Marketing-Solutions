@@ -42,7 +42,7 @@ import genzbroking from '../assets/portfolios/genz-broking.png'
 import clearedeals from '../assets/portfolios/clear-deals.png'
 import madhavGopal from '../assets/portfolios/madhav-gopal.png'
 import globcalProperties from '../assets/portfolios/globcal-properties.png'
-
+import contractor from '../assets/portfolios/contractor.png'
 
 
 
@@ -350,7 +350,14 @@ const portfolioItems = [
     tags: ["UK Real Estate", "Great Britain", "Property Deals"],
     description:
       "Your strategic international gateway to exploring, analyzing, and purchasing prime residential and commercial real estate properties across the United Kingdom and Great Britain.",
-  }
+  },
+  {
+    name: "Contractor",
+    url: "https://contractror-frontend.vercel.app",
+    image: contractor,
+    tags: ["Building Solutions", "Residential Projects", "Commercial Construction"],
+    description:"From concept to completion, we provide reliable construction, renovation, and project management services, creating durable spaces that combine quality, innovation, and functionality.",
+}
 
 ];
 
