@@ -273,7 +273,7 @@ const SEODigitalMarketing = () => {
 
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-8 animate-fade-up">
                 <span className="block">Digital Marketing</span>
-                <span className="text-3xl md:text-4xl lg:text-5xl block mt-4 font-light text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
+                <span className="text-3xl md:text-4xl lg:text-5xl block mt-4 font-light text-[#D676EC] bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
                   Amplify Your Online Presence
                 </span>
               </h1>
