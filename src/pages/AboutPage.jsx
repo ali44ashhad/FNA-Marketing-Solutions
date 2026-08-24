@@ -29,7 +29,7 @@ import React from "react";
 import kalpana from "../assets/kalpana.jpeg";
 import gurshan from "../assets/gurshan.jpeg";
 import shivang from "../assets/shivang.jpeg";
-import ashhadAli from '../assets/ashhadali.PNG'
+import ashhadAli from '../assets/ashhad.jpeg'
 import madhavBansal from '../assets/madhav-bansal.PNG'
 import ritesh from '../assets/ritesh.PNG'
 import keshav from '../assets/keshav.PNG'
