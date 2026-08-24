@@ -38,6 +38,8 @@ import dishant from '../assets/dishant.PNG'
 import jatinJain from '../assets/jatinjain.PNG'
 import linkedIn from '../assets/linkedin.png'
 import portfolio from '../assets/portfolio.png'
+import siddharth from '../assets/siddharth.jpeg'
+import sania from '../assets/sania.jpeg'
 
 
 import { motion } from "framer-motion";
@@ -617,6 +619,20 @@ const AboutPage = () => {
                   image: vandna,
                   linkedin:
                     "https://www.linkedin.com/in/vandna-shakya-358187312",
+                },
+                {
+                  name: "Siddharth Shakya",
+                  role: "SEO Excecutive",
+                  image: siddharth,
+                  linkedin:
+                    "https://www.linkedin.com/in/siddharthshakya93",
+                },
+                {
+                  name: "Sania Malik",
+                  role: "SEO Executive",
+                  image: sania,
+                  linkedin:
+                    "https://www.linkedin.com/in/sania-malik230",
                 },
               ].map((member, idx) => (
                 <motion.div
