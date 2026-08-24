@@ -603,7 +603,7 @@ const AboutPage = () => {
                   role: "Junior Analyst",
                   image: shivang,
                   linkedin:
-                    "https://www.linkedin.com/in/shivang-saini-782630230 ",
+                    "https://www.linkedin.com/in/shivang-782630230",
                 },
 
                 {
