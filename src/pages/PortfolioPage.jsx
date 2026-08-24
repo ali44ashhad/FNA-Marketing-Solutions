@@ -43,6 +43,9 @@ import clearedeals from '../assets/portfolios/clear-deals.png'
 import madhavGopal from '../assets/portfolios/madhav-gopal.png'
 import globcalProperties from '../assets/portfolios/globcal-properties.png'
 import contractor from '../assets/portfolios/contractor.png'
+import earbuds from '../assets/portfolios/earbuds.png'
+import wirelessEarbuds from '../assets/portfolios/wireless-earbuds.png'
+import foiter from '../assets/portfolios/fointer.png'
 
 
 
@@ -357,7 +360,23 @@ const portfolioItems = [
     image: contractor,
     tags: ["Building Solutions", "Residential Projects", "Commercial Construction"],
     description:"From concept to completion, we provide reliable construction, renovation, and project management services, creating durable spaces that combine quality, innovation, and functionality.",
-}
+},
+{
+  name: "Earbuds",
+  url: "https://earbuds-seven.vercel.app",
+  image: earbuds,
+  tags: ["Earbuds", "Wireless", "Noise Cancellation"],
+  description:
+    "Experience the perfect blend of sound, comfort, and technology with our premium wireless earbuds, designed for seamless audio enjoyment and uninterrupted listening.",
+},
+{
+  name: "Wireless Earbuds",
+  url: "https://wireless-earbuds.vercel.app",
+  image: wirelessEarbuds,
+  tags: ["Wireless", "Noise Cancellation", "Sound Quality"],
+  description:"Experience the perfect blend of sound, comfort, and technology with our premium wireless earbuds, designed for seamless audio enjoyment and uninterrupted listening.",
+},
+
 
 ];
 
