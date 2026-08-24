@@ -374,9 +374,8 @@ const portfolioItems = [
   url: "https://wireless-earbuds.vercel.app",
   image: wirelessEarbuds,
   tags: ["Wireless", "Noise Cancellation", "Sound Quality"],
-  description:"Experience the perfect blend of sound, comfort, and technology with our premium wireless earbuds, designed for seamless audio enjoyment and uninterrupted listening.",
+  description:"iscover premium sound without limits, combining immersive audio, ergonomic comfort, and advanced wireless technology in every beat.",
 },
-
 
 ];
 
