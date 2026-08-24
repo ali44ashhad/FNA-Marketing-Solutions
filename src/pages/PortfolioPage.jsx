@@ -45,7 +45,7 @@ import globcalProperties from '../assets/portfolios/globcal-properties.png'
 import contractor from '../assets/portfolios/contractor.png'
 import earbuds from '../assets/portfolios/earbuds.png'
 import wirelessEarbuds from '../assets/portfolios/wireless-earbuds.png'
-import foiter from '../assets/portfolios/fointer.png'
+import fointer from '../assets/portfolios/fointer.png'
 
 
 
@@ -360,6 +360,14 @@ const portfolioItems = [
     image: contractor,
     tags: ["Building Solutions", "Residential Projects", "Commercial Construction"],
     description:"From concept to completion, we provide reliable construction, renovation, and project management services, creating durable spaces that combine quality, innovation, and functionality.",
+},
+{
+  name: "Fointer",
+  url: "https://fointer.net",
+  image: fointer,
+  tags: ["Community", "Connections", "Engagement"],
+  description:
+    "Discover a vibrant space where people connect, share ideas, build relationships, and grow together through meaningful community experiences.",
 },
 {
   name: "Earbuds",
