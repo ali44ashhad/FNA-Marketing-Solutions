@@ -622,7 +622,7 @@ const AboutPage = () => {
                 },
                 {
                   name: "Siddharth Shakya",
-                  role: "SEO Excecutive",
+                  role: "SEO Executive",
                   image: siddharth,
                   linkedin:
                     "https://www.linkedin.com/in/siddharthshakya93",
