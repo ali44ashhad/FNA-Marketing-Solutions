@@ -46,7 +46,8 @@ import contractor from '../assets/portfolios/contractor.png'
 import earbuds from '../assets/portfolios/earbuds.png'
 import wirelessEarbuds from '../assets/portfolios/wireless-earbuds.png'
 import fointer from '../assets/portfolios/fointer.png'
-
+import samsungGalaxy from '../assets/portfolios/samsung-galaxy.png'
+import truWirelessEarbuds from '../assets/portfolios/true-wireless-buds.png'
 
 
 const portfolioItems = [
@@ -384,6 +385,24 @@ const portfolioItems = [
   tags: ["Wireless", "Noise Cancellation", "Sound Quality"],
   description:"iscover premium sound without limits, combining immersive audio, ergonomic comfort, and advanced wireless technology in every beat.",
 },
+{
+  name: "Samsung Galaxy",
+  url: "https://samsung-galaxy-pi.vercel.app",
+  image: samsungGalaxy,
+  tags: ["Touchscreen", "AMOLED Display", "Smart Performance"],
+  description:
+    "Experience a powerful smartphone with a stunning touchscreen display, advanced performance, and seamless Galaxy technology built for everyday life.",
+},
+
+{
+  name: "True Wireless Earbuds",
+  url: "https://true-wireless-buds.vercel.app",
+  image: truWirelessEarbuds,
+  tags: ["Wireless", "Smart Audio", "Premium Sound"],
+  description:
+    "Discover powerful sound in a compact design, combining intelligent features, effortless connectivity, and all-day comfort in every listening experience.",
+},
+
 
 ];
 
