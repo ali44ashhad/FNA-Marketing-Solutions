@@ -48,7 +48,8 @@ import wirelessEarbuds from '../assets/portfolios/wireless-earbuds.png'
 import fointer from '../assets/portfolios/fointer.png'
 import samsungGalaxy from '../assets/portfolios/samsung-galaxy.png'
 import truWirelessEarbuds from '../assets/portfolios/true-wireless-buds.png'
-
+import backpack from '../assets/portfolios/backpack.png'
+import carstory from '../assets/portfolios/carstory.png'
 
 const portfolioItems = [
   {
@@ -403,6 +404,23 @@ const portfolioItems = [
     "Discover powerful sound in a compact design, combining intelligent features, effortless connectivity, and all-day comfort in every listening experience.",
 },
 
+{
+  name: "BackPack",
+  url: "https://back-pack-two.vercel.app",
+  image: backpack,
+  tags: ["Travel Ready", "Spacious Design", "Everyday Comfort"],
+  description:
+    "Discover stylish and durable backpacks designed for travel, work, and everyday adventures, combining spacious storage, comfort, and modern design.",
+},
+
+{
+  name: "CARSTORY",
+  url: "https://carstory-one.vercel.app",
+  image: carstory,
+  tags: ["Powerful Performance", "Luxury Design", "Smooth Driving"],
+  description:
+    "Explore powerful and stylish cars built for performance, comfort, and unforgettable journeys, bringing modern technology and premium driving experiences together.",
+},
 
 ];
 
