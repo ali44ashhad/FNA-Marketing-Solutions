@@ -51,7 +51,8 @@ import truWirelessEarbuds from '../assets/portfolios/true-wireless-buds.png'
 import backpack from '../assets/portfolios/backpack.png'
 import carstory from '../assets/portfolios/carstory.png'
 import porscheImage from '../assets/portfolios/porsche.png'
-
+import earbudsCheck from '../assets/portfolios/earbuds-check.png'
+import missDior from '../assets/portfolios/miss-dior.png'
 
 
 const portfolioItems = [
@@ -432,6 +433,26 @@ const portfolioItems = [
     description:
       "Discover beautifully engineered cars that deliver exhilarating performance, advanced features, exceptional comfort, and a truly memorable driving experience.",
 },
+
+{
+  name: "EARBUDS CHECK",
+  url: "https://earbuds-check.vercel.app",
+  image: earbudsCheck,
+  tags: ["Immersive Sound", "Compact Design", "Clear Calling"],
+
+description:
+  "Experience immersive sound with powerful bass, crystal-clear calls, and a compact design built for comfortable listening throughout your day.",
+},
+{
+  name: "MISS DIOR",
+  url: "https://miss-dior-henna.vercel.app",
+  image: missDior,
+  tags: ["Elegant Fragrance", "Luxury Scent", "Long-Lasting Aroma"],
+
+  description:
+    "Discover beautifully crafted fragrances that blend captivating aromas, luxurious notes, lasting freshness, and timeless elegance for a truly unforgettable experience.",
+  
+  },
 
 ];
 
