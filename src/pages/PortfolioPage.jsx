@@ -50,7 +50,7 @@ import samsungGalaxy from '../assets/portfolios/samsung-galaxy.png'
 import truWirelessEarbuds from '../assets/portfolios/true-wireless-buds.png'
 import backpack from '../assets/portfolios/backpack.png'
 import carstory from '../assets/portfolios/carstory.png'
-import porscheImage from '../assets/portfolios/porsche.png'
+import veltrixImage from '../assets/portfolios/veltrix.png'
 import earbudsCheck from '../assets/portfolios/earbuds-check.png'
 import missDior from '../assets/portfolios/miss-dior.png'
 
@@ -426,9 +426,9 @@ const portfolioItems = [
     "Explore powerful and stylish cars built for performance, comfort, and unforgettable journeys, bringing modern technology and premium driving experiences together.",
 },
 {
-  name: "PORSCHE",
-  url: "https://porsche-zeta.vercel.app",
-  image: porscheImage,
+  name: "VELTRIX",
+  url: "https://veltrix-cars.vercel.app",
+  image: veltrixImage,
     tags: ["Powerful Performance", "Luxury Design", "Smooth Driving"],
     description:
       "Discover beautifully engineered cars that deliver exhilarating performance, advanced features, exceptional comfort, and a truly memorable driving experience.",
