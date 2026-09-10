@@ -46,7 +46,7 @@ import contractor from '../assets/portfolios/contractor.png'
 import earbuds from '../assets/portfolios/earbuds.png'
 import wirelessEarbuds from '../assets/portfolios/wireless-earbuds.png'
 import fointer from '../assets/portfolios/fointer.png'
-import samsungGalaxy from '../assets/portfolios/samsung-galaxy.png'
+import naxora from '../assets/portfolios/naxora.png'
 import truWirelessEarbuds from '../assets/portfolios/true-wireless-buds.png'
 import backpack from '../assets/portfolios/backpack.png'
 import carstory from '../assets/portfolios/carstory.png'
@@ -391,9 +391,9 @@ const portfolioItems = [
   description:"iscover premium sound without limits, combining immersive audio, ergonomic comfort, and advanced wireless technology in every beat.",
 },
 {
-  name: "Samsung Galaxy",
-  url: "https://samsung-galaxy-pi.vercel.app",
-  image: samsungGalaxy,
+  name: "Naxora",
+  url: "https://naxora-pi.vercel.app",
+  image: naxora,
   tags: ["Touchscreen", "AMOLED Display", "Smart Performance"],
   description:
     "Experience a powerful smartphone with a stunning touchscreen display, advanced performance, and seamless Galaxy technology built for everyday life.",
