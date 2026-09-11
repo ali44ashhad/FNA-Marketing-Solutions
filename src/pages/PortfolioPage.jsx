@@ -53,7 +53,7 @@ import carstory from '../assets/portfolios/carstory.png'
 import veltrixImage from '../assets/portfolios/veltrix.png'
 import earbudsCheck from '../assets/portfolios/earbuds-check.png'
 import missDior from '../assets/portfolios/miss-dior.png'
-
+import niva from '../assets/portfolios/niva.png'
 
 const portfolioItems = [
   {
@@ -444,9 +444,9 @@ description:
   "Experience immersive sound with powerful bass, crystal-clear calls, and a compact design built for comfortable listening throughout your day.",
 },
 {
-  name: "MISS DIOR",
-  url: "https://miss-dior-henna.vercel.app",
-  image: missDior,
+  name: "NIVA",
+  url: "https://niva-henna.vercel.app",
+  image: niva,
   tags: ["Elegant Fragrance", "Luxury Scent", "Long-Lasting Aroma"],
 
   description:
