@@ -9,10 +9,7 @@ import serve4 from '../assets/pricing/serve4.png'
 import serve5 from '../assets/pricing/serve5.png'
 import serve6 from '../assets/pricing/serve6.webp'
 import serve7 from '../assets/pricing/serve7.png'
- import emailjs from "@emailjs/browser";
- 
-
-
+import emailjs from "@emailjs/browser";
 
 
 const pricingData = [

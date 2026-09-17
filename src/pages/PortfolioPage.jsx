@@ -54,6 +54,10 @@ import veltrixImage from '../assets/portfolios/veltrix.png'
 import earbudsCheck from '../assets/portfolios/earbuds-check.png'
 import missDior from '../assets/portfolios/miss-dior.png'
 import niva from '../assets/portfolios/niva.png'
+import homeNest from '../assets/portfolios/homenest.png'
+import estateVista from '../assets/portfolios/estatevista.png'
+
+
 
 const portfolioItems = [
   {
@@ -453,6 +457,27 @@ description:
     "Discover beautifully crafted fragrances that blend captivating aromas, luxurious notes, lasting freshness, and timeless elegance for a truly unforgettable experience.",
   
   },
+  {
+    name: "HomeNest",
+    url: "https://home-nest-bay.vercel.app",
+    image: homeNest,
+    tags: ["Premium Properties", "Modern Living", "Perfect Locations"],
+
+description:
+"Discover thoughtfully selected properties offering modern designs, comfortable living spaces, prime locations, and exceptional value for a truly rewarding living experience.",
+
+},
+    {
+      name: "EstateVista",
+      url: "https://estate-vista-flame.vercel.app",
+      image: estateVista,
+      tags: ["Dream Homes", "Prime Locations", "Smart Investments"],
+
+      description:
+      "Explore exceptional properties featuring stylish architecture, desirable locations, spacious interiors, and valuable opportunities designed to make your next move confident and rewarding.",
+      
+      },
+      
 
 ];
 
