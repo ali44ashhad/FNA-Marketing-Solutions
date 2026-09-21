@@ -56,7 +56,7 @@ import missDior from '../assets/portfolios/miss-dior.png'
 import niva from '../assets/portfolios/niva.png'
 import homeNest from '../assets/portfolios/homenest.png'
 import estateVista from '../assets/portfolios/estatevista.png'
-
+import estivaImage from '../assets/portfolios/estiva.png'
 
 
 const portfolioItems = [
@@ -475,8 +475,16 @@ description:
 
       description:
       "Explore exceptional properties featuring stylish architecture, desirable locations, spacious interiors, and valuable opportunities designed to make your next move confident and rewarding.",
-      
       },
+      {
+        name: "Estiva",
+        url: "https://estiva-gamma.vercel.app",
+        image: estivaImage,
+        tags: ["Luxury Properties", "Prime Locations", "Modern Living"],
+
+        description:
+          "Discover thoughtfully selected properties featuring modern designs, prime locations, spacious interiors, and excellent amenities for comfortable living and valuable real estate opportunities.",
+      }
       
 
 ];
