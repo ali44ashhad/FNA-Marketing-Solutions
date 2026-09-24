@@ -57,7 +57,7 @@ import niva from '../assets/portfolios/niva.png'
 import homeNest from '../assets/portfolios/homenest.png'
 import estateVista from '../assets/portfolios/estatevista.png'
 import estivaImage from '../assets/portfolios/estiva.png'
-
+import veloraEstate from '../assets/portfolios/velora-estate.png'
 
 const portfolioItems = [
   {
@@ -484,7 +484,17 @@ description:
 
         description:
           "Discover thoughtfully selected properties featuring modern designs, prime locations, spacious interiors, and excellent amenities for comfortable living and valuable real estate opportunities.",
-      }
+      },
+      {
+        name: " Velora Estate",
+        url: "https://velora-estate-mauve.vercel.app",
+        image: veloraEstate,
+        tags: ["Dream Homes", "Prime Locations", "Smart Investments"],
+
+        description:
+          "Explore exceptional properties in sought-after locations, offering modern designs, spacious interiors, premium amenities, and valuable opportunities for comfortable living and long-term investment.",
+      },
+
       
 
 ];
