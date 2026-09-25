@@ -58,6 +58,9 @@ import homeNest from '../assets/portfolios/homenest.png'
 import estateVista from '../assets/portfolios/estatevista.png'
 import estivaImage from '../assets/portfolios/estiva.png'
 import veloraEstate from '../assets/portfolios/velora-estate.png'
+import greenFieldImage from '../assets/portfolios/green-field.png'
+
+
 
 const portfolioItems = [
   {
@@ -494,8 +497,15 @@ description:
         description:
           "Explore exceptional properties in sought-after locations, offering modern designs, spacious interiors, premium amenities, and valuable opportunities for comfortable living and long-term investment.",
       },
+      {
+        name: "GreenField",
+        url: "https://green-field-two.vercel.app",
+        image: greenFieldImage,
+        tags: ["High Yields", "Strategic Assets", "Urban Growth"],
+        description:
+          "Capitalize on prime real estate opportunities in high-growth districts. Perfect for portfolios seeking reliable rental yields, strong capital appreciation, and long-term financial security.",
+      },
 
-      
 
 ];
 
