@@ -59,7 +59,7 @@ import estateVista from '../assets/portfolios/estatevista.png'
 import estivaImage from '../assets/portfolios/estiva.png'
 import veloraEstate from '../assets/portfolios/velora-estate.png'
 import greenFieldImage from '../assets/portfolios/green-field.png'
-
+import haveliImage from "../assets/portfolios/haveli.png"
 
 
 const portfolioItems = [
@@ -504,6 +504,14 @@ description:
         tags: ["High Yields", "Strategic Assets", "Urban Growth"],
         description:
           "Capitalize on prime real estate opportunities in high-growth districts. Perfect for portfolios seeking reliable rental yields, strong capital appreciation, and long-term financial security.",
+      },
+      {
+        name: "Haveli",
+        url: "https://haveli-jade.vercel.app",
+        image: haveliImage,
+        tags: ["Luxury Properties", "Prime Locations", "Modern Living"],
+        description:
+          "Discover thoughtfully selected properties featuring modern designs, prime locations, spacious interiors, and excellent amenities for comfortable living and valuable real estate opportunities.",
       },
 
 
