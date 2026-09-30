@@ -526,7 +526,7 @@ description:
         },
       {
         name: "Restaurant",
-        url: "https://park-lane-nu.vercel.app",
+        url: "https://restaurant-iota-swart-52.vercel.app",
         image: restaurantImage,
         tags: ["Fine Dining", "Multi-Cuisine", "Private Dining"],
         description:
