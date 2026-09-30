@@ -61,6 +61,8 @@ import veloraEstate from '../assets/portfolios/velora-estate.png'
 import greenFieldImage from '../assets/portfolios/green-field.png'
 import haveliImage from "../assets/portfolios/haveli.png"
 import parkLaneImage from "../assets/portfolios/parklane.png"
+import restaurantImage from "../assets/portfolios/restaurant.png"
+
 
 const portfolioItems = [
   {
@@ -518,12 +520,19 @@ description:
         name: "ParkLane",
         url: "https://park-lane-nu.vercel.app",
         image: parkLaneImage,
-        tags: ["Residential", "Commercial", "Investment"],
+        tags: ["Gourmet Dining", "Signature Dishes", "Fine Ambiance"],
         description:
-          "ParkLane is a premium residential and commercial real estate development company that specializes in creating luxurious and sustainable living spaces in sought-after locations across the country.",
+          "Savor an unforgettable dining experience with expertly prepared dishes, premium ingredients, and inviting ambiance. Our restaurant brings together rich flavors, creative cuisine, and attentive service to make every visit truly special.",
+        },
+      {
+        name: "Restaurant",
+        url: "https://park-lane-nu.vercel.app",
+        image: restaurantImage,
+        tags: ["Fine Dining", "Multi-Cuisine", "Private Dining"],
+        description:
+          "ParkLane is a premium restaurant offering an elegant dining experience with delicious cuisine, handcrafted dishes, and warm hospitality. From intimate dinners to special celebrations, we create memorable moments in a refined and welcoming atmosphere.",
+
       },
-
-
 ];
 
 
