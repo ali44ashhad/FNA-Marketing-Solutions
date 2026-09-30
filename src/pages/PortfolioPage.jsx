@@ -60,7 +60,7 @@ import estivaImage from '../assets/portfolios/estiva.png'
 import veloraEstate from '../assets/portfolios/velora-estate.png'
 import greenFieldImage from '../assets/portfolios/green-field.png'
 import haveliImage from "../assets/portfolios/haveli.png"
-
+import parkLaneImage from "../assets/portfolios/parklane.png"
 
 const portfolioItems = [
   {
@@ -512,6 +512,15 @@ description:
         tags: ["Luxury Properties", "Prime Locations", "Modern Living"],
         description:
           "Discover thoughtfully selected properties featuring modern designs, prime locations, spacious interiors, and excellent amenities for comfortable living and valuable real estate opportunities.",
+      },
+
+      {
+        name: "ParkLane",
+        url: "https://park-lane-nu.vercel.app",
+        image: parkLaneImage,
+        tags: ["Residential", "Commercial", "Investment"],
+        description:
+          "ParkLane is a premium residential and commercial real estate development company that specializes in creating luxurious and sustainable living spaces in sought-after locations across the country.",
       },
 
 
